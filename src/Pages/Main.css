@@ -50,7 +50,7 @@ body {
 /* Média lekérdezés kisebb telefonokhoz */
 @media (max-width: 772px) {
   .blurred {
-    backdrop-filter: blur(1.5rem); /* Kisebb képernyőkön több homályosítás */
+    backdrop-filter: blur(0.8vw); /* Kisebb képernyőkön több homályosítás */
     -webkit-backdrop-filter: blur(1.5rem); /* Safari-hoz */
     box-shadow: 2px 4px 6px rgb(81, 70, 202); /* Kisebb árnyék */
   }
