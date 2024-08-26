@@ -85,9 +85,7 @@
     }
 }
 
-.egyediKep{
-    height: 100%;
-}
+
 
 @media(max-width: 998px) {
     .egyediKep{

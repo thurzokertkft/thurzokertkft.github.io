@@ -173,7 +173,7 @@ function Services() {
                         </Card.Text>
                         </Col> 
                       <Col xs={6} md={6} lg={6}>
-                        <img className='img-fluid szolgRight egyediKep' src='Karbantartas.png'/>                 
+                        <img className='img-fluid szolgRight' src='Karbantartas.png'/>                 
                       </Col> 
                     </Row> 
                   </Card>
