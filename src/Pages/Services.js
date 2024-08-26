@@ -394,7 +394,7 @@ function Services() {
             <Col xs={12} md={12} lg={12}>
               <Card style={{ backgroundColor: 'inherit', padding: '0vw', margin: 0 }}>
                 <Row style={{textAlign: 'center', justifyContent: 'center'}}>
-                  <Col xs={12} md={6} lg={6}>
+                  <Col xs={10} md={6} lg={6}>
                     <Form style={{marginLeft: '1vw'}} onSubmit={handleSubmit}>
                       <h3 style={{marginTop: '5vw', textAlign: 'center', color: 'bisque' }}>Lépjen kapcsolatba velünk</h3>
                       
@@ -454,7 +454,7 @@ function Services() {
                       </FormGroup>
                     </Form>
                   </Col>
-                  <Col xs={12} md={6} lg={6} style={{ display: 'flex', justifyContent: 'center' }}>
+                  <Col xs={10} md={6} lg={6} style={{ display: 'flex', justifyContent: 'center' }}>
                     <img 
                       src='SupportLetter.jpg' 
                       style={{ maxWidth: '100%', height: 'auto' }} 
