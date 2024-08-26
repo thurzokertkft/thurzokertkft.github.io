@@ -64,7 +64,7 @@ function Main() {
             <Link to="/Services#specific-section">
               <Card className='szinReklamAtmenet card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
                 <img className='img-fluid reklam' src='OntozoReklam.jpg' style={{ flex: 1, objectFit: 'cover' }} />
-                <img className='img-fluid reklam2' src='OntozoReklam2.jpg' style={{ width: '100%', objectFit: 'cover' }} />
+                <img className='img-fluid reklam2' src='ontozoReklam2.jpg' style={{ width: '100%', objectFit: 'cover' }} />
               </Card>
             </Link>
           </Col>
