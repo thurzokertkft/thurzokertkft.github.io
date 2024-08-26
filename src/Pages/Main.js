@@ -14,33 +14,36 @@ function Main() {
   
   return (
     <div>
-      <Navbar bg="dark" expand='lg'>
-        <Container fluid>
-        <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
-          <Navbar.Toggle className="ms-auto"/>
-          <Navbar.Collapse className="justify-content-end">
-            <Nav>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque', fontSize: '110%' }}>
-                <Link style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
-              </Nav.Link>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/Services" style={{ color: 'inherit', textDecoration: 'none' }}>Szolgáltatásaink</Link>
-              </Nav.Link>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/Us" style={{ color: 'inherit', textDecoration: 'none' }}>Rólunk</Link>
-              </Nav.Link>   
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/Works" style={{ color: 'inherit', textDecoration: 'none' }}>Munkáink</Link>
-              </Nav.Link>  
-              <Nav.Link style={{ marginRight: '20em', color: 'bisque'}}>
-                <Link to="/Support" style={{ color: 'inherit', textDecoration: 'none' }}>Kapcsolat</Link>
-              </Nav.Link>          
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Container fluid style={{padding: 0}}>
+        <Navbar bg="dark" expand='lg'>
+          
+          <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
+            <Navbar.Toggle className="ms-auto"/>
+            <Navbar.Collapse className="justify-content-end">
+              <Nav>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque', fontSize: '110%' }}>
+                  <Link style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
+                </Nav.Link>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Services" style={{ color: 'inherit', textDecoration: 'none' }}>Szolgáltatásaink</Link>
+                </Nav.Link>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Us" style={{ color: 'inherit', textDecoration: 'none' }}>Rólunk</Link>
+                </Nav.Link>   
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Works" style={{ color: 'inherit', textDecoration: 'none' }}>Munkáink</Link>
+                </Nav.Link>  
+                <Nav.Link style={{ marginRight: '20em', color: 'bisque'}}>
+                  <Link to="/Support" style={{ color: 'inherit', textDecoration: 'none' }}>Kapcsolat</Link>
+                </Nav.Link>          
+              </Nav>
+            </Navbar.Collapse>
+          
+        </Navbar>
+      </Container>
 
-      <div>
+      <Container fluid style={{margin: 0, padding: 0}}>
+      
         <img src='Fokep.jpg' className='img-fluid' style={{position: 'absolute', zIndex: -1}}/>
 
           <div className='text-center'>
@@ -56,7 +59,8 @@ function Main() {
               </Card>
             </Col>   
         </Container>
-      </div>
+      
+      </Container>
 
       <Container>
         <Row style={{ marginTop: '10vw'}}>
@@ -237,7 +241,7 @@ function Main() {
           </div>
 
 
-          <footer className="footer" style={{color: 'bisque', backgroundColor: '#333333', marginTop: '20%'}}>
+          <footer fluid className="footer" style={{color: 'bisque',padding: 0, backgroundColor: '#333333', marginTop: '20%'}}>
             <Row>
               <Col xs={3} md={3} lg={4}>
                 <img src='Logo.png' style={{width: '15vw', marginTop: '1vw'}}/>
