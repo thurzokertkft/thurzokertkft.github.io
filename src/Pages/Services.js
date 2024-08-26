@@ -490,7 +490,7 @@ function Services() {
 
       <Container fluid>
         <Row style={{marginTop: '2vw', textAlign: 'ceneter', justifyContent: 'center'}}>
-        <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
+        <Col xs={3} md={3} lg={2} className='text-center fontSizeCard'>
           <p style={{
             
             fontWeight: 'normal', 
@@ -504,7 +504,7 @@ function Services() {
           </p>
         </Col>
 
-          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={3} lg={2} className='text-center fontSizeCard'>
             <p style={{
              
             fontWeight: 'normal', 
@@ -518,7 +518,7 @@ function Services() {
             </p>
           </Col>
  
-          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={3} lg={2} className='text-center fontSizeCard'>
             <p style={{
             
             fontWeight: 'normal', 
@@ -528,9 +528,7 @@ function Services() {
             fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
             fontStyle: 'italic'
           }}>Tereprendezés és földmunka</p>
-          </Col>
-
-          
+          </Col>       
         </Row>
       </Container>
       
@@ -559,7 +557,7 @@ function Services() {
 
       <Container fluid>
         <Row style={{marginTop: '2vw', textAlign: 'ceneter', justifyContent: 'center'}}>
-        <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+        <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
           <p style={{
             
             fontWeight: 'normal', 
@@ -573,7 +571,7 @@ function Services() {
           </p>
         </Col>
 
-          <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
             <p style={{
              
             fontWeight: 'normal', 
@@ -587,7 +585,7 @@ function Services() {
             </p>
           </Col>
  
-          <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
             <p style={{
             
             fontWeight: 'normal', 
