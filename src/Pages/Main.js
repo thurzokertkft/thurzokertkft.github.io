@@ -14,9 +14,9 @@ function Main() {
   
   return (
     <div>
-      <Container fluid style={{padding: 0}}>
+      
         <Navbar bg="dark" expand='lg'>
-          
+        <Container fluid>
           <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
             <Navbar.Toggle className="ms-auto"/>
             <Navbar.Collapse className="justify-content-end">
@@ -38,9 +38,9 @@ function Main() {
                 </Nav.Link>          
               </Nav>
             </Navbar.Collapse>
-          
+          </Container>
         </Navbar>
-      </Container>
+      
 
       <Container fluid style={{margin: 0, padding: 0}}>
       

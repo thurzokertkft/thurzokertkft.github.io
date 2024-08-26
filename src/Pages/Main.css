@@ -39,7 +39,7 @@ body {
 }
 
 .blurred {
-  background: rgba(255, 255, 255, 0); /* Teljesen átlátszó háttér */ 
+  background: rgba(255, 255, 255, 0); /* Teljesen átlátszó háttér */
   box-shadow: 4px 6px 10px rgb(81, 70, 202);
   backdrop-filter: blur(0.2vw); /* Homályosítás */
   -webkit-backdrop-filter: blur(10vw); /* Homályosítás Safari-hoz */
@@ -48,11 +48,11 @@ body {
 }
 
 /* Média lekérdezés kisebb telefonokhoz */
-@media (max-width: 772px) {
+@media (max-width: 992px) {
   .blurred {
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(0.8vw); /* Kisebb képernyőkön több homályosítás */
-    -webkit-backdrop-filter: blur(1.5rem); /* Safari-hoz */
+    background: rgba(255, 255, 255, 0.1); /* Kis háttér átlátszóság, hogy a homályosítás lágy maradjon */
+    backdrop-filter: blur(0.5rem); /* Finomabb homályosítás kisebb képernyőkön */
+    -webkit-backdrop-filter: blur(0.5rem); /* Safari-hoz */
     box-shadow: 2px 4px 6px rgb(81, 70, 202); /* Kisebb árnyék */
   }
 }
