@@ -78,7 +78,14 @@
     font-size: 1vw;
 }
 
-@media(max-width: 998px) {
+@media (min-width: 773px) and (max-width: 1024px) {
+    .minFontSize3{
+        font-size: 6px;
+        line-height: 9px;
+    }
+}
+
+@media(max-width: 772px) {
     .minFontSize{
         font-size: 8.5px;
         line-height: 10px;
@@ -108,7 +115,14 @@
     font-size: 0.8vw;
 }
 
-@media(max-width: 998px) {
+@media (min-width: 773px) and (max-width: 1024px) {
+    .minFontSize3{
+        font-size: 7px;
+        line-height: 8px;
+    }
+}
+
+@media(max-width: 772px) {
     .minFontSize3{
         font-size: 5px;
         line-height: 8px;
