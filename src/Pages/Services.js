@@ -330,7 +330,7 @@ function Services() {
           <Col xs={3} md={2} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
               <img className='img-fluid reklam' src='OntozoReklam.jpg' style={{ flex: 1, objectFit: 'cover' }} />
-              <img className='img-fluid reklam2' src='OntozoReklam2.jpg' style={{ width: '100%', objectFit: 'cover' }} />
+              <img className='img-fluid reklam2' src='ontozoReklam2.jpg' style={{ width: '100%', objectFit: 'cover' }} />
             </Card>
           </Col>
 
@@ -490,7 +490,7 @@ function Services() {
 
       <Container fluid>
         <Row style={{marginTop: '2vw', textAlign: 'ceneter', justifyContent: 'center'}}>
-        <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+        <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
           <p style={{
             
             fontWeight: 'normal', 
@@ -504,7 +504,7 @@ function Services() {
           </p>
         </Col>
 
-          <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
             <p style={{
              
             fontWeight: 'normal', 
@@ -518,7 +518,7 @@ function Services() {
             </p>
           </Col>
  
-          <Col xs={3} md={2} lg={2} className='text-center fontSizeCard'>
+          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
             <p style={{
             
             fontWeight: 'normal', 
@@ -537,19 +537,19 @@ function Services() {
       
       <Container fluid>
         <Row style={{textAlign: 'center', justifyContent: 'center'}}>
-          <Col xs={3} md={3} lg={2}>
+          <Col xs={3} md={4} lg={2}>
               <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='ToReklam.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>
           </Col>
 
-          <Col xs={3} md={3} lg={2}>
+          <Col xs={3} md={4} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
               <img className='img-fluid' src='Szaktanacsadas.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Card>
           </Col>
           
-          <Col xs={3} md={3} lg={2}>
+          <Col xs={3} md={4} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
               <img className='img-fluid' src='Napelempark.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Card>
