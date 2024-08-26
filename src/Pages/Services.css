@@ -1,0 +1,201 @@
+.bemutatkozoKep{
+    background-image: url(../../public/Szolg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.szolgRight {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 75%);
+}
+
+.szolgLeft {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 75%);
+}
+
+.szolgLeft2{
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.szolgTop {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 75%);
+}
+
+.szolgTop2 {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) -5%, rgba(0, 0, 0, 1) 75%);
+}
+
+
+.szinAtmenet{
+ background: linear-gradient(to right, #777777, #3e7843, #4b7d42)
+}
+
+.szinAtmenet2{
+    background: linear-gradient(to left, #474646, #425a44, #7fbe74)
+}
+
+.szinAtmenet3{
+    background: linear-gradient(to top, #9de5ff, #b5c1ff, #353b4d)
+}
+
+.szinAtmenet4{
+    background: linear-gradient(to top, #8b8888, #4b604e, #e6e3e3)
+}
+
+.szinAtmenet5{
+    background: linear-gradient(to top, #e6e3e3, #70a4cd, #888b88)
+}
+
+.szinAtmenet6{
+    background: linear-gradient(to top, #0064ab, #4aaffc, #70a4cd)
+}
+
+.sajatMargin{
+    margin-left: 3vw;
+}
+
+@media (max-width: 772px) {
+    .sajatMargin{
+        margin-left: 0px;
+    }
+}
+
+.fontSizeCard{
+    font-size: 1.5vw;
+}
+  
+@media (max-width: 772px) {
+    .fontSizeCard{
+        font-size: 2.5vw;
+    }
+}
+
+.minFontSize{
+    font-size: 1vw;
+}
+
+@media(max-width: 998px) {
+    .minFontSize{
+        font-size: 8.5px;
+        line-height: 10px;
+    }
+}
+
+.egyediKep{
+    height: 100%;
+}
+
+@media(max-width: 998px) {
+    .egyediKep{
+        height: 100%;
+    }
+}
+
+.minFontSize2{
+    font-size: 1.1vw;
+}
+
+@media(max-width: 998px) {
+    .minFontSize2{
+        font-size: 8px;
+        line-height: 8px;
+    }
+}
+
+.minFontSize3{
+    font-size: 0.8vw;
+}
+
+@media(max-width: 998px) {
+    .minFontSize3{
+        font-size: 5px;
+        line-height: 8px;
+    }
+}
+
+.backgroundPaper{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23020356'/%3E%3Cstop offset='1' stop-color='%2320FF4D'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+}
+
+.iconsSize{
+    width: 3vw;
+    height: 3vw;
+}
+
+@media(max-width: 998px) {
+    .iconsSize{
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+.iconsFontSize{
+    font-size: 1vw;
+}
+
+@media(max-width: 998px) {
+    .iconsFontSize{
+        font-size: 2vw;
+    }
+}
+
+.shadow {
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+.szolgValasztas{
+    text-decoration: underline;
+    font-size: 2vw;
+    color: bisque; /* Bisque szín */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+    letter-spacing: 0.2vw; 
+    font-family: "Times New Roman", "Garamond", "Georgia", serif;
+    font-style: italic;
+}
+
+@media (max-width: 772px) {
+    .szolgValasztas{
+        text-decoration: underline;
+        font-size: 5vw;
+        color: bisque; /* Bisque szín */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+        letter-spacing: 0.2vw; 
+        font-family: "Times New Roman", "Garamond", "Georgia", serif;
+        font-style: italic;
+    }
+}
+
+.backgroundColor{
+    color: #51ff00;
+    
+}
+
+.slide-pane__header{
+    background: #19123c  !important;
+}
+
+.slide-pane__content{
+    background: #312e3f;
+}
+
+.containerWidth{
+    
+}
+
+@media (max-width: 772px) {
+    .containerWidth{
+        width: 128%;
+        margin-left: -8vw;
+
+    }
+    
+}
+
+

@@ -1,0 +1,58 @@
+.textAreaSize{
+    max-width: 75%;
+    height: 10vw;
+}
+
+@media (max-width: 772px) {
+    .textAreaSize{
+        width: 100%;
+        max-width: 400px;
+        height: 20vw;
+    }
+}
+
+.left{
+    margin-left: 3.1vw;
+}
+
+@media (max-width: 772px) {
+    .left{
+        margin-left: 61px;
+    }
+}
+
+.custom-placeholder::placeholder {
+    color: rgb(0, 0, 0); /* A kívánt placeholder szín */
+    opacity: 1; /* Opciósan módosíthatod az átlátszóságot is */
+}
+
+.kepSzinAtmenet {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+}
+
+.szinAtmenet{
+    background: linear-gradient(to top, #040404, #18281a, #317125)
+}
+
+.logo{
+    width: 25%;
+    height: auto;
+}
+
+@media (max-width: 772px) {
+    .logo{
+        width: 35px;
+        height: auto;
+    }
+}
+
+.marginCheck{
+    margin-left: 13%;
+}
+
+@media (max-width: 772px) {
+    .marginCheck{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.cardokSzinAtmenet{
+    background: linear-gradient(to top, #152537, #352918, #54240e)
+  }
+
+.welcomeFontSize{
+  font-size: 1.5vw;
+}
+
+
+@media(max-width: 772px){
+  .welcomeFontSize{
+    font-size: 3vw;
+  }
+}
+
+.welcomeSzinAtmenet{
+  background: linear-gradient(to top, #8e8e52, #636339, #634b03, #5f5924);
+}

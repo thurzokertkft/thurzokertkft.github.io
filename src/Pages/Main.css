@@ -1,0 +1,413 @@
+.navbar-toggler {
+    color: antiquewhite;
+    background-color: bisque;
+}
+
+body {
+  background: linear-gradient(to top, #8e8e52, #636339, #634b03, #5f5924);
+  height: 30%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.shadow {
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  
+}
+
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+.box {
+  animation: drop-in 5000ms;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+.blurred {
+  background: rgba(255, 255, 255, 0); /* Teljesen átlátszó háttér */ 
+  box-shadow: 4px 6px 10px rgb(81, 70, 202);
+  backdrop-filter: blur(0.2vw); /* Homályosítás */
+  -webkit-backdrop-filter: blur(10vw); /* Homályosítás Safari-hoz */
+  border: none;
+  text-align: center;
+}
+
+.obscure{
+  height: 30vw;
+  width: 50vw;
+  margin-top: 0px;
+}
+
+.logoText {
+  font-size: 2vw;
+  color: white;
+  line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  .logoText {
+    font-size: 3.5vw; /* Esetleg más méret a kis képernyőkön */
+    line-height: 0.8; /* Vagy más, ha szükséges */
+  }
+}
+
+.fontSize{
+  font-size: 1vw;
+  color: bisque;
+}
+
+@media(max-width: 600px) {
+  .fontSize{
+    font-size: 2vw;
+    
+  }
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: inherit;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: inherit
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 136, 59, 0.5); /* 0.5 áttetszőség */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.toUs{
+  font-size: 2vw;
+}
+
+@media(max-width: 998px){
+  .toUs{
+    font-size: 12px;
+  }
+}
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.animationBody {
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 40px 40px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #276620,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 20%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #e6ffe7;
+  text-shadow: 0 0 0.6rem #1346ff, 0 0 1.5rem #040247,
+    -0.2rem 0.1rem 1rem #26217f, 0.2rem 0.1rem 1rem #554aa8,
+    0 -0.5rem 2rem #052bff, 0 0.5rem 3rem #0565ff;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@media(max-width: 998px) {
+  .sign{
+    font-size: 1em;
+  }
+  
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #1346ff, 0 0 1.5rem #040247,
+    -0.2rem 0.1rem 1rem #26217f, 0.2rem 0.1rem 1rem #554aa8,
+    0 -0.5rem 2rem #052bff, 0 0.5rem 3rem #0565ff;
+  }
+  28%,
+  33% {
+    color: #17015a;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #14015a;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 10s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #60a8f9;
+    text-shadow: 0 0 0.6rem #1346ff, 0 0 1.5rem #040247,
+    -0.2rem 0.1rem 1rem #26217f, 0.2rem 0.1rem 1rem #554aa8,
+    0 -0.5rem 2rem #052bff, 0 0.5rem 3rem #0565ff;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.reklam {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.reklam2 {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.reklam3 {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 30%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 15%);
+}
+
+.reklam4 {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 30%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 75%);
+}
+
+.szinReklamAtmenet{
+  background: linear-gradient(to top, #4374a8, #352918, #54240e)
+}
+
+ .szinReklamAtmenet2{
+  background: linear-gradient(to top, #66a843, #183519, #13540e)
+}
+
+.card-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: scale(1.15); /* A kártya 5%-kal nagyobb lesz */
+  box-shadow: 30px 15px 40px rgba(0, 0, 0, 0.8); /* Erősebb árnyék */
+}
+
+
+.fontSizeCard{
+  font-size: 1.5vw;
+}
+
+@media (max-width: 772px) {
+  .fontSizeCard{
+    font-size: 2.5vw;
+  }
+}
