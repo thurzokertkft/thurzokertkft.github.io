@@ -47,7 +47,7 @@ function Us() {
               <Card.Text style={{color: 'bisque'}} className='TextSize'>
               Üdvözlünk az oldalon! Örülünk, hogy itt vagy, és reméljük, hogy megtalálod, amit keresel. Ha bármiben segítségre van szükséged, ne habozz kapcsolatba lépni velünk. Kellemes böngészést kívánunk!
               </Card.Text>
-              <img className='img-fluid kepekAtmenete' src='ipari.jpg'/>
+              <img className='img-fluid kepekAtmenete' src='Ipari.jpg'/>
             </Card>
           </Col>
           <Col xs={12} md={4} lg={4} >
@@ -57,7 +57,7 @@ function Us() {
               </Card.Text>
           </Card>
           <Card style={{marginTop: '2vw'}} className='blurred2'>
-            <img src='ipari5.jpg'/>
+            <img src='Ipari5.jpg'/>
           </Card>
           </Col>
         </Row>
@@ -67,12 +67,12 @@ function Us() {
                 <Card.Text style={{color: 'bisque'}} className='TextSize'>
                   Üdvözlünk az oldalon! Örülünk, hogy itt vagy, és reméljük, hogy megtalálod, amit keresel. Ha bármiben segítségre van szükséged, ne habozz kapcsolatba lépni velünk. Kellemes böngészést kívánunk!
                 </Card.Text>
-                <img className='kepekAtmenete2' src='ipari2.jpg'/>
+                <img className='kepekAtmenete2' src='Ipari2.jpg'/>
               </Card>
             </Col>     
             <Col xs={6} md={8} lg={8} style={{paddingLeft: 0}}>
               <Card className='blurred2'>
-                <img className='img-fluid' src='ipari4.jpg'/>
+                <img className='img-fluid' src='Ipari4.jpg'/>
               </Card>
             </Col>
         </Row>

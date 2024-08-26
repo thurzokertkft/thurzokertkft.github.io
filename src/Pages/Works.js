@@ -198,7 +198,7 @@ function Works() {
                 </Col>
                 <Col xs={3} md={3} lg={2}>
                     <Card className='cardokSzinAtmenet' style={{ boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
-                    <img className='img-fluid' src='utana2.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    <img className='img-fluid' src='Utana2.jpg' style={{ flex: 1, objectFit: 'cover' }} />
                     </Card>
                 </Col>
             </Row>
