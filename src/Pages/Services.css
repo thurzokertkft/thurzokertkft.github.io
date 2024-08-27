@@ -217,7 +217,19 @@
 }
 
 
-.valami{
-    font-size: 320px;
+.iconsLeftMargin{
+    margin-left: 0;
+}
+
+
+@media (max-width: 772px) {
+    .iconsLeftMargin{
+        margin-left: -2vw;
+    }
+    
+}
+
+.slidePanelHiddenFlow{
+    overflow-x: hidden;
 }
 

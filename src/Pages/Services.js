@@ -94,25 +94,37 @@ function Services() {
                   </Card>         
               </Col>  
 
-          <Row style={{marginTop: '0vw'}}>
-            <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={3} md={3} lg={3}>
+          <Row   style={{marginTop: '0vw', textAlign: 'center', justifyContent: 'center'}}>
+            <Col  style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={3} lg={3}>
               <RiTeamFill className='iconsSize' style={{ color: 'lightcyan'}}/>
-              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Több mint 60+ ügyfél</p>
             </Col>
-            <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
+            <Col  style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
               <FaGears className='iconsSize' style={{ color: 'lightcyan'}}/>
-              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Precizitás</p>
             </Col>
             <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
               <MdMoreTime className='iconsSize' style={{color: 'lightcyan'}}/>
-              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Minőség</p>
             </Col>
             <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
               <GiPlantWatering className='iconsSize' style={{ color: 'lightcyan'}}/>
-              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Fentartható környezet</p>
             </Col>
             <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={3} md={3} lg={3}>
               <FaHandsHelping className='iconsSize' style={{ color: 'lightcyan'}}/>
+            </Col>
+          </Row> 
+          <Row  style={{marginTop: '0vw', textAlign: 'center', justifyContent: 'center'}}>
+            <Col  style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={3} lg={3}>
+              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}> 60+ ügyfél</p>
+            </Col>
+            <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
+              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Precizitás</p>
+            </Col>
+            <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
+              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Minőség</p>
+            </Col>
+            <Col style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={2} lg={2}>
+              <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Fentartható környezet</p>
+            </Col>
+            <Col xs={3} md={3} lg={3} style={{marginTop: '2vw', textAlign: 'center'}} >
               <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}>Megbízhatóság</p>
             </Col>
           </Row> 
@@ -381,7 +393,7 @@ function Services() {
       </Container>
       
       <SlidingPane
-        className="backgroundColor"
+        className="backgroundColor slidePanelHiddenFlow"
         
         isOpen={state.isPaneOpen}
         onRequestClose={() => {
