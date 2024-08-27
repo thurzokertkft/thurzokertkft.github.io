@@ -14,6 +14,7 @@ function Support() {
   const [state, handleSubmit] = useForm("mzzpypad");
   const [showModal, setShowModal] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+  
 
   // Show modal when form submission is successful
   useEffect(() => {
@@ -97,13 +98,18 @@ function Support() {
                       placeholder='Írja le, hogy mik az igényei és nemsokára fogjuk keresni...'
                       required
                     />
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
                     <Form.Check 
                     style={{ marginBottom: '2vw', color: 'bisque'}}
                     type="checkbox" 
                     className='marginCheck'
-                    label="Elfogadom az Adatvédelmi tájékoztatót" 
+                    label="Elfogadom az"
                     onChange={handleCheckboxChange}
                     />
+                    
+                    <Link to="/Protection" className='fontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
+                    <FormLabel style={{color: 'bisque'}}>tájékoztatót</FormLabel>
+                    </div>
                     <ValidationError 
                       prefix="Message" 
                       field="message"
