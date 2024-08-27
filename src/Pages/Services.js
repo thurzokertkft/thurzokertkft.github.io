@@ -111,7 +111,7 @@ function Services() {
               <FaHandsHelping className='iconsSize' style={{ color: 'lightcyan'}}/>
             </Col>
           </Row> 
-          <Row  style={{marginTop: '0vw', textAlign: 'center', justifyContent: 'center'}}>
+          <Row  style={{marginTop: '-1vw', textAlign: 'center', justifyContent: 'center'}}>
             <Col  style={{marginTop: '2vw', textAlign: 'center'}} xs={2} md={3} lg={3}>
               <p className='iconsFontSize shadow' style={{ color: 'lightcyan'}}> 60+ ügyfél</p>
             </Col>
@@ -444,13 +444,18 @@ function Services() {
                           placeholder='Írja le, hogy mik az igényei és nemsokára fogjuk keresni...'
                           required
                         />
-                        <Form.Check 
-                          style={{marginLeft: '13%', marginBottom: '2vw', color: 'bisque'}}
+                         <div style={{display: 'flex', flexDirection: 'row'}}>
+                          <Form.Check 
+                          style={{ marginBottom: '2vw', color: 'bisque'}}
                           type="checkbox" 
-                          
-                          label="Elfogadom az Adatvédelmi tájékoztatót" 
+                          className='marginCheck'
+                          label="Elfogadom az"
                           onChange={handleCheckboxChange}
                           />
+                          
+                          <Link to="/Protection" className='fontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
+                          <FormLabel style={{color: 'bisque'}}>tájékoztatót</FormLabel>
+                        </div>
                           <ValidationError 
                             prefix="Message" 
                             field="message"
