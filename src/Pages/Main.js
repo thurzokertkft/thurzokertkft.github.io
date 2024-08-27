@@ -241,15 +241,20 @@ function Main() {
           </div>
 
 
+
           <footer fluid className="footer" style={{color: 'bisque',padding: 0, backgroundColor: '#333333', marginTop: '20%'}}>
             <Row>
-              <Col xs={3} md={3} lg={4}>
+              <Col xs={3} md={3} lg={6}>
                 <img src='Logo.png' style={{width: '15vw', marginTop: '1vw'}}/>
               </Col>
-              <Col xs={8} md={8} lg={8}>
+              <Col xs={8} md={8} lg={6}>
                 <Card  style={{backgroundColor: 'GrayText', border: '3px solid green'}}>
-                  <Card.Body>
-                    <div style={{display: 'flex', justifyContent: 'flex-end', marginRight: '5vw'}}>          
+                 
+                  <Card.Body>   
+                    <div style={{display: 'flex', justifyContent: 'flex-end', marginRight: '5vw'}}> 
+                    <Nav.Link style={{ marginRight: '20em',marginTop: '-2px', color: 'bisque' }}>
+                    <Link to="/Protection" style={{ color: 'inherit', textDecoration: 'underline', fontSize: '1.2em' }}><b>Adatvédelem</b></Link>
+                    </Nav.Link>         
                     <Card.Title className='fontSize'>
                       Elérhetőség:
                     </Card.Title>

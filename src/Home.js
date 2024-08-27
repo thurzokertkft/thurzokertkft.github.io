@@ -5,7 +5,9 @@ import Services from './Pages/Services';
 import Us from './Pages/Us';
 import Works from './Pages/Works';
 import Support from './Pages/Support';
+import Protection from './Pages/Protection';
 import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom'
+
 
 
 
@@ -18,6 +20,7 @@ function Home()
       <Route path="/Us" element={<Us />} />
       <Route path="/Works" element={<Works />} />
       <Route path="/Support" element={<Support />} />
+      <Route path="/Protection" element={<Protection />} />
     </Routes>
   );
 }
