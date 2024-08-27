@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './Protection.css';
 import { Navbar, Container, Nav, NavbarToggle, NavbarCollapse, Carousel, Col, Card, CardImg, CardHeader, Row, CardBody, CardText, CarouselItem, CardTitle, Table } from 'react-bootstrap';
 import Footer from 'rc-footer';
 import { Link } from 'react-router-dom';
@@ -11,9 +11,15 @@ import { FaScrewdriverWrench } from "react-icons/fa6";
 
 
 function Protection() {
+
+    const isScrollablePage = true; // Változtasd meg ennek az értékét az adott oldal szerint
+
+  const containerStyle = {
+    overflowX: isScrollablePage ? 'auto' : 'hidden',
+  };
   
   return (
-    <div>
+    <div style={containerStyle}>
       
         <Navbar bg="dark" expand='lg'>
         <Container fluid>
@@ -143,7 +149,7 @@ function Protection() {
                         </li>
                     </ol>
                     </Card.Text>
-                    <Card style={{ padding: '2rem' }}>
+                    <Card xs={6} md={12} lg={12} style={{ padding: '2rem' }}>
                         <Card.Title style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
                             Adatkezelési tevékenység
                         </Card.Title>
