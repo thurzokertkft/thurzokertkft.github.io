@@ -44,7 +44,7 @@ function Protection() {
         
         <Container>
             <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
-              <Col xs={12} md={8} lg={12}>
+              <Col xs={12} md={12} lg={12}>
               <Card>
                 <Card.Body>
                     <Card.Title>
@@ -428,41 +428,42 @@ function Protection() {
         </Container>
 
 
-          <footer fluid className="footer" style={{color: 'bisque',padding: 0, backgroundColor: '#333333', marginTop: '20%'}}>
+        <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>
             <Row>
-              <Col xs={3} md={3} lg={6}>
-                <img src='Logo.png' style={{width: '15vw', marginTop: '1vw'}}/>
-              </Col>
-              <Col xs={8} md={8} lg={6}>
-                <Card  style={{backgroundColor: 'GrayText', border: '3px solid green'}}>
-                 
-                  <Card.Body>   
-                    <div style={{display: 'flex', justifyContent: 'flex-end', marginRight: '5vw'}}> 
-                    <Nav.Link style={{ marginRight: '20em',marginTop: '-2px', color: 'bisque' }}>
-                    <Link  style={{ color: 'inherit', textDecoration: 'underline', fontSize: '1.2em' }}><b>Adatvédelem</b></Link>
-                    </Nav.Link>         
-                    <Card.Title className='fontSize'>
-                      Elérhetőség:
-                    </Card.Title>
-                    <Card.Text className='fontSize' style={{marginLeft: '5vw'}}>
-                      +36/70 421 2294
-                      <br/>
-                      +36/70 530 3055
-                    </Card.Text>
-                    </div>
-                    <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                    <Card.Title className='fontSize'>
-                      Email:
-                    </Card.Title>
-                    <Card.Text className='fontSize' style={{marginLeft: '5vw'}}>
-                      thurzobence98@gmail.com
-                    </Card.Text>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </Col>
+                <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
+                </Col>
+                <Col xs={12} md={8}>
+                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
+                        <Card.Body>
+                            <div style={{ marginBottom: '1rem' }}>
+                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                                    <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
+                                </Nav.Link>
+                            </div>
+                            <div  style={{ marginRight: '5vw'}}>
+                            <Card.Title className='fontSize'>
+                                Elérhetőség:
+                            </Card.Title>
+                            <Card.Text className='fontSize'>
+                                +36/70 421 2294
+                                <br />
+                                +36/70 530 3055
+                            </Card.Text>
+                            <Card.Title className='fontSize'>
+                                Email:
+                            </Card.Title>
+                            <Card.Text className='fontSize'>
+                                thurzobence98@gmail.com
+                            </Card.Text>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
-          </footer>
+        </footer>
+
+
 
   </div>
   

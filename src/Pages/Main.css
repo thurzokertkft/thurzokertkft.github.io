@@ -11,9 +11,9 @@ body {
   touch-action: pan-y;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+
+
+
 
 .shadow {
   text-shadow: 0 0 10px rgb(0, 0, 0);
@@ -80,8 +80,19 @@ body {
   }
 }
 
+.footerLeftComponent {
+  /* Default styles for smaller screens (phones, small tablets) */
+}
+
+/* Media query for larger screens (desktops, tablets) */
+@media (min-width: 1024px) {
+  .footerLeftComponent {
+    float: right; /* Align the component to the right */
+  }
+}
+
 .fontSize{
-  font-size: 1vw;
+  font-size: 0.8vw;
   color: bisque;
 }
 
