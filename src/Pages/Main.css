@@ -11,9 +11,6 @@ body {
   touch-action: pan-y;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
 
 
 
