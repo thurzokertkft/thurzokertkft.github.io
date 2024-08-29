@@ -103,7 +103,7 @@ function Support() {
                     style={{ marginBottom: '2vw', color: 'bisque'}}
                     type="checkbox" 
                     className='marginCheck'
-                    label="Elfogadom az"
+                    label="Kijelentem hogy elolvastam és elfogadom az"
                     onChange={handleCheckboxChange}
                     />
                     
@@ -169,6 +169,9 @@ function Support() {
                                 <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
                                     <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
                                 </Nav.Link>
+                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
+                                </Nav.Link>
                             </div>
                             <div  style={{ marginRight: '5vw'}}>
                             <Card.Title className='fontSize'>
@@ -191,7 +194,6 @@ function Support() {
                 </Col>
             </Row>
         </footer>
-
 
   </div>
   

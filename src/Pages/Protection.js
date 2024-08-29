@@ -428,7 +428,14 @@ function Protection() {
                     Szeged, 2024. február 12.
                 </Card.Text>
                 </Card.Body>
+                <Card.Text style={{ textAlign: 'left', paddingLeft: '2rem' }}>
+                    <a href="Adatkezelési tájékoztató ügyfél részére.docx" download>
+                        Töltse le az Adatkezelési Tájékoztatót
+                    </a>
+                </Card.Text>
               </Card>
+
+              
               </Col>
             </Row>
         </Container>
@@ -445,6 +452,9 @@ function Protection() {
                             <div style={{ marginBottom: '1rem' }}>
                                 <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
                                     <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
+                                </Nav.Link>
+                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
                                 </Nav.Link>
                             </div>
                             <div  style={{ marginRight: '5vw'}}>
