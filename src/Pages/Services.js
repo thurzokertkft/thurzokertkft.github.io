@@ -435,40 +435,40 @@ function Services() {
                       <hr style={{border: '1px solid green'}}/>
 
                       <FormGroup controlId="formMessage" style={{ textAlign: 'center' }}>
-                        <FormLabel style={{ color: 'bisque', display: 'block' }}>Írjon nekünk:</FormLabel>
-                        <FormControl 
-                          className='textAreaSize'
-                          as="textarea" 
-                          style={{ margin: '0 auto', marginBottom: '2vw'}} 
-                          name="message"
-                          placeholder='Írja le, hogy mik az igényei és nemsokára fogjuk keresni...'
-                          required
-                        />
-                         <div style={{display: 'flex', flexDirection: 'row'}}>
-                          <Form.Check 
-                          style={{ marginBottom: '2vw', color: 'bisque'}}
-                          type="checkbox" 
-                          className='marginCheck'
-                          label="Kijelentem hogy elolvastam és elfogadom az"
-                          onChange={handleCheckboxChange}
-                          />
-                          
-                          <Link to="/Protection" className='fontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
-                          <FormLabel style={{color: 'bisque'}}>tájékoztatót</FormLabel>
-                        </div>
-                          <ValidationError 
-                            prefix="Message" 
-                            field="message"
-                            errors={state.errors}
-                          />
-                          <Button  
-                            type="submit" 
-                            style={{width: '75%', backgroundColor: 'darkgreen', border: '1px solid black', color: 'bisque'}}
-                            disabled={!isChecked || state.submitting}
-                          >
-                            Küldés
-                          </Button>
-                      </FormGroup>
+                    <FormLabel style={{ color: 'bisque', display: 'block' }}>Írjon nekünk:</FormLabel>
+                    <FormControl 
+                      className='textAreaSize'
+                      as="textarea" 
+                      style={{ margin: '0 auto', marginBottom: '2vw'}} 
+                      name="message"
+                      placeholder='Kérjük, ossza meg velünk igényeit, és rövidesen keresni fogjuk.'
+                      required
+                    />
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <Form.Check 
+                    style={{ marginBottom: '2vw', color: 'bisque'}}
+                    type="checkbox" 
+                    className='marginCheck'
+                    
+                    onChange={handleCheckboxChange}
+                    />
+                    <FormLabel className='customFontSize' style={{marginLeft: '10px', color: 'bisque'}}> Kijelentem hogy elolvastam és elfogadom az</FormLabel>
+                    <Link to="/Protection" className='customFontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
+                    <FormLabel className='customFontSize' style={{color: 'bisque'}}>tájékoztatót</FormLabel>
+                    </div>
+                    <ValidationError 
+                      prefix="Message" 
+                      field="message"
+                      errors={state.errors}
+                    />
+                    <Button  
+                      type="submit" 
+                      style={{width: '75%', backgroundColor: 'darkgreen', border: '1px solid black', color: 'bisque'}}
+                      disabled={!isChecked || state.submitting}
+                    >
+                      Küldés
+                    </Button>
+                  </FormGroup>
                     </Form>
                   </Col>
                   <Col xs={10} md={6} lg={6} style={{ display: 'flex', justifyContent: 'center' }}>

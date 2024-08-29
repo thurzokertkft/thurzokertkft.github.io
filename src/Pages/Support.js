@@ -95,7 +95,7 @@ function Support() {
                       as="textarea" 
                       style={{ margin: '0 auto', marginBottom: '2vw'}} 
                       name="message"
-                      placeholder='Írja le, hogy mik az igényei és nemsokára fogjuk keresni...'
+                      placeholder='Kérjük, ossza meg velünk igényeit, és rövidesen keresni fogjuk.'
                       required
                     />
                     <div style={{display: 'flex', flexDirection: 'row'}}>
@@ -103,12 +103,12 @@ function Support() {
                     style={{ marginBottom: '2vw', color: 'bisque'}}
                     type="checkbox" 
                     className='marginCheck'
-                    label="Kijelentem hogy elolvastam és elfogadom az"
+                    
                     onChange={handleCheckboxChange}
                     />
-                    
-                    <Link to="/Protection" className='fontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
-                    <FormLabel style={{color: 'bisque'}}>tájékoztatót</FormLabel>
+                    <FormLabel className='customFontSize' style={{marginLeft: '10px', color: 'bisque'}}> Kijelentem hogy elolvastam és elfogadom az</FormLabel>
+                    <Link to="/Protection" className='customFontSize' style={{ color: 'Blue', textDecoration: 'underline', marginLeft: '0.5vw', marginRight: '0.5vw'}}><b>Adatvédelemi</b></Link>
+                    <FormLabel className='customFontSize' style={{color: 'bisque'}}>tájékoztatót</FormLabel>
                     </div>
                     <ValidationError 
                       prefix="Message" 

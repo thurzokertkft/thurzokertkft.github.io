@@ -21,6 +21,16 @@
     }
 }
 
+.customFontSize{
+    font-size: 0.7vw;
+}
+
+@media (max-width: 772px) {
+    .customFontSize{
+        font-size: 2vw;
+    }
+}
+
 .custom-placeholder::placeholder {
     color: rgb(0, 0, 0); /* A kívánt placeholder szín */
     opacity: 1; /* Opciósan módosíthatod az átlátszóságot is */

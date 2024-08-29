@@ -27,7 +27,7 @@ function Contract() {
             <Navbar.Toggle className="ms-auto"/>
             <Navbar.Collapse className="justify-content-end">
               <Nav>
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque', fontSize: '110%' }}>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
                   <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
                 </Nav.Link>
                 <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
