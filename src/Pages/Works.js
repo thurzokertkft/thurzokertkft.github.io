@@ -20,29 +20,32 @@ function Works() {
     <div>
       <Navbar bg="dark" expand='lg'>
         <Container fluid>
-        <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
-          <Navbar.Toggle className="ms-auto"/>
-          <Navbar.Collapse className="justify-content-end">
-            <Nav>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
-              </Nav.Link>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/Services" style={{ color: 'inherit', textDecoration: 'none' }}>Szolgáltatásaink</Link>
-              </Nav.Link>
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
-                <Link to="/Us" style={{ color: 'inherit', textDecoration: 'none' }}>Rólunk</Link>
-              </Nav.Link>   
-              <Nav.Link style={{ marginRight: '2em', color: 'bisque', fontSize: '110%' }}>
-                <Link to="/Works" style={{ color: 'inherit', textDecoration: 'none' }}>Munkáink</Link>
-              </Nav.Link>  
-              <Nav.Link style={{ marginRight: '20em', color: 'bisque'}}>
-                <Link to="/Support" style={{ color: 'inherit', textDecoration: 'none' }}>Kapcsolat</Link>
-              </Nav.Link>          
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+          <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
+            <Navbar.Toggle className="ms-auto"/>
+            <Navbar.Collapse className="justify-content-end">
+              <Nav>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque'}}>
+                  <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
+                </Nav.Link>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Services" style={{ color: 'inherit', textDecoration: 'none' }}>Szolgáltatásaink</Link>
+                </Nav.Link>
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Industrial" style={{ color: 'inherit', textDecoration: 'none' }}>Cégeknek</Link>
+                </Nav.Link>  
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Us" style={{ color: 'inherit', textDecoration: 'none' }}>Rólunk</Link>
+                </Nav.Link>   
+                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                  <Link to="/Works" style={{ color: 'inherit', textDecoration: 'none', fontSize: '110%' }}>Munkáink</Link>
+                </Nav.Link>  
+                <Nav.Link style={{ marginRight: '20em', color: 'bisque'}}>
+                  <Link to="/Support" style={{ color: 'inherit', textDecoration: 'none' }}>Kapcsolat</Link>
+                </Nav.Link>          
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
 
     <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
       <Col xs={10} md={6} lg={8}>
@@ -211,7 +214,7 @@ function Works() {
                 <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={12} md={4} style={{paddingRight: 0}}>
                     <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
                         <Card.Body>
                             <div style={{ marginBottom: '1rem' }}>
@@ -227,19 +230,49 @@ function Works() {
                                 Elérhetőség:
                             </Card.Title>
                             <Card.Text className='fontSize'>
-                                +36/70 421 2294
+                              +36/70 530 3055
                                 <br />
-                                +36/70 530 3055
+                              +36/70 635 7555
                             </Card.Text>
                             <Card.Title className='fontSize'>
                                 Email:
                             </Card.Title>
                             <Card.Text className='fontSize'>
-                                thurzobence98@gmail.com
+                                thurzokertkft@gmail.com
                             </Card.Text>
                             </div>
                         </Card.Body>
                     </Card>
+                </Col>
+                <Col xs={12} md={4} style={{paddingLeft: 0}}>
+                <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
+                      <Card.Body>
+                          <div style={{ marginRight: '5vw' }}>
+                              <Card.Title className='fontSize'>
+                                  <b style={{textDecoration: 'underline'}}>Impresszum</b>
+                              </Card.Title>
+                              <Card.Text className='fontSize' style={{paddingBottom: '0.75vw'}}>
+                                  Cégnév: Thurzo Kert Kft.
+                                  <br />
+                                  Székhely: 3531 Miskolc Füzes utca 36.
+                                  <br />
+                                  Cégjegyzékszám: 05 09 018959
+                                  <br />
+                                  Adószám: 11722591-2-05
+                                  <br />
+                                  Ügyvezető igazgató: Thurzó Róbert
+                                  <br />
+                                  Telefonszám: +36/70 530 3055
+                                  <br />
+                                  E-mail cím: thurzokertkft@gmail.com
+                                  
+                                  
+                              </Card.Text>
+                              
+                          </div>
+                      </Card.Body>
+                  </Card>
+                    
                 </Col>
             </Row>
         </footer>

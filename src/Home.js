@@ -7,6 +7,7 @@ import Works from './Pages/Works';
 import Support from './Pages/Support';
 import Protection from './Pages/Protection';
 import Contract from './Pages/Contract';
+import Industrial from './Pages/Industrial';
 import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom'
 
 
@@ -23,6 +24,7 @@ function Home()
       <Route path="/Support" element={<Support />} />
       <Route path="/Protection" element={<Protection />} />
       <Route path="/Contract" element={<Contract />} />
+      <Route path="/Industrial" element={<Industrial />} />
     </Routes>
   );
 }

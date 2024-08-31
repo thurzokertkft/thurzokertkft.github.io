@@ -1,0 +1,71 @@
+.industrialFontSize{
+    font-size: 1.2vw;
+}
+
+@media (max-width: 772px) {
+    .industrialFontSize{
+        font-size: 15px;
+        
+    }
+}
+
+.cardSzintAtmenet{
+    background: linear-gradient(to right, #353434, #004002, #359224);
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.cardSzintAtmenet2{
+    background: linear-gradient(to right, #dadada, #7a6868, #6e5a5a);
+    
+}
+
+.cardSzintAtmenet3{
+    background: linear-gradient(to right, #6e5a5a, #7a6868, #dadada);
+    
+}
+
+
+
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center; /* Középre igazítja az ikont */
+    background-size: 100% 100%; /* Megfelelő méretezés */
+    opacity: 1; /* Biztosítsd, hogy teljesen látható */}
+
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center; /* Középre igazítja az ikont */
+    background-size: 100% 100%; /* Megfelelő méretezés */
+    opacity: 1; /* Biztosítsd, hogy teljesen látható */
+}
+
+.marginTopCustom {
+    
+}
+
+
+@media (min-width: 1024px) {
+    .marginTopCustom {
+        margin-top: -10vw; 
+        
+    }
+}
+
+.textCenter{
+
+}
+
+@media (max-width: 992px) {
+    .textCenter{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
