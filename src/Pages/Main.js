@@ -103,6 +103,8 @@ function Main() {
         </Row>
       </Container>
 
+      
+
       <Container>
         <Row style={{ marginTop: '3vw'}}>
         <Col xs={3} md={3} lg={3} className='text-center fontSizeCard'>
@@ -152,11 +154,18 @@ function Main() {
               letterSpacing: '0.2vw', 
               fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
               fontStyle: 'italic'
-            }}>Napelemparkok</p>
+            }}>Ipari szolgáltatásaink</p>
             
           </Col>
         </Row>
+       
+        
+          
+      
       </Container>
+
+     
+      
       
 
           <Container fluid style={{ marginTop: '10vw', }}>

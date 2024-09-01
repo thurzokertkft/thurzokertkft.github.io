@@ -16,3 +16,8 @@
 .welcomeSzinAtmenet{
   background: linear-gradient(to top, #8e8e52, #636339, #634b03, #5f5924);
 }
+
+.cardokNagyitasa img:active {
+  transform: scale(1.2); /* 1.2-szeresére nagyítja a képet */
+  transition: transform 0.3s ease; /* Áttűnés az eredeti méretből a nagyítottba */
+}

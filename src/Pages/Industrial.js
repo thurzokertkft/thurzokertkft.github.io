@@ -161,13 +161,11 @@ function Industrial() {
         </Col>
         <Col  xs={11} md={3} lg={3}>
           <Card className='cardSzintAtmenet2' style={{border: 'none'}}>
-          <Carousel fade >       
-                    <Carousel.Item>
-                    <img src='Kasza.jpg' className='card-img'/>                   
+          <Carousel fade controls={false} indicators={false}>       
+                    <Carousel.Item >
+                    <img src='Kasza3.jpg' className='card-img '/>                   
                     </Carousel.Item>   
-                    <Carousel.Item>
-                    <img src='Kasza2.jpg' className='card-img'/>                   
-                    </Carousel.Item> 
+                    
                   </Carousel>
                   <Card.Title style={{textAlign: 'left', paddingLeft: '1vw'}}>Kaszálás</Card.Title>
                   <hr style={{color: 'green', border: '2px solid'}}/>
@@ -228,8 +226,108 @@ function Industrial() {
               </Card>
             </Col>
           </Row>
-          <Row  className='textCenter marginTopCustom'>
-            <Col xs={12} md={5} lg={5}>
+          <Row className='marginTopCustom' style={{textAlign: 'center', justifyContent: 'center'}}>
+          <Col xs={11} md={6}>
+              <Card className='cardSzintAtmenet2'>
+                <Row>
+                  <Col xs={12} md={4} style={{ display: 'flex', alignItems: 'center', 
+                    height: '100%' }}>
+                      <Carousel>
+                        <Carousel.Item>
+                     
+                          <img 
+                            src='Legelo.jpg' 
+                            className='card-img' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                     
+                          <img 
+                            src='Legelo2.jpg' 
+                            className='card-img' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                     
+                          <img 
+                            src='Hotel.jpg' 
+                            className='card-img' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                     
+                          <img 
+                            src='Madarodu.jpg' 
+                            className='card-img' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                     
+                          <img 
+                            src='Madarodu3.jpg' 
+                            className='card-img' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                      </Carousel>
+                  </Col>
+                  <Col xs={12} md={8} lg={8}>
+                    <Card.Body>
+                      <Card.Title style={{ paddingLeft: '1vw', textAlign: 'left' }}>
+                        Biodiverzitás
+                      </Card.Title>
+                      <hr style={{ color: 'green', border: '2px solid' }} />
+                      <Card.Text style={{ paddingLeft: '1vw', textAlign: 'left' }}>
+                        Cégünk nem csupán a gazdasági növekedésre, hanem a környezetvédelmi fenntarthatóságra is nagy hangsúlyt fektet.
+                      </Card.Text>
+                      <hr style={{ color: 'green', border: '2px solid' }} />
+
+                      <Card.Text className='card-text' style={{ textAlign: 'left' }}>
+                        <ul>
+                          <li>
+                            <b>Saját Készítésű Méhhotelek:</b> Támogatjuk a beporzó rovarok, különösen a méhek fennmaradását saját készítésű méhhoteleinkkel, amelyek biztonságos pihenő- és szaporodóhelyeket biztosítanak számukra.
+                          </li>
+                          <li>
+                            <b>Virágos Méhlegelők Kialakítása:</b> Virágos rétek és méhlegelők telepítésével segítjük a beporzók, például a méhek és lepkék táplálkozását, hozzájárulva a természetes növényvilág sokféleségéhez.
+                          </li>
+                          <li>
+                            <b>Madárvédelmi Programok:</b> A madarak védelme érdekében madárodúkat és itatókat helyezünk ki, amelyek biztonságos fészkelőhelyet és friss vízforrást biztosítanak számukra, ezzel támogatva a madárpopulációk fennmaradását.
+                          </li>
+                        </ul>
+                      </Card.Text>
+                    </Card.Body>
+                  </Col>
+                </Row>
+              </Card>
+            </Col>
+          </Row>
+
+          <Row  className='textCenter' style={{marginTop: '5vw'}}>
+            <Col xs={12} md={5} lg={12}>
             <Card style={{backgroundColor: 'inherit', border: 'none'}}>
               <Card.Title style={{padding: '0.5vw', textAlign: 'center', color: 'bisque'}}>
               "Növelje vállalata hatékonyságát és csökkentse a költségeket – válasszon minket, optimalizálja ipari zöld területeit a legmagasabb szintű szakértelemmel!
@@ -239,9 +337,13 @@ function Industrial() {
               Több éves tapasztalatunk, megbízhatóságunk és szakértelmünk révén nagyvállalatok ránk bízzák a zöldterületeiket. Ne hagyja ki a lehetőséget, hogy a biodiverzitás révén a zöld vállalatok legjobbjai közé tartozzon – lépjen kapcsolatba velünk még ma, és tapasztalja meg a különbséget!"
               </Card.Title>
             </Card>
-            </Col>
+            </Col>           
           </Row>
+
+
           </Container>
+
+
 
 
           <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>

@@ -420,6 +420,10 @@ body {
   background: linear-gradient(to top, #66a843, #183519, #13540e)
 }
 
+.szinReklamAtmenet3{
+  background: linear-gradient(to right, #1d271a, #2d5a2f, #15fe04)
+}
+
 .card-hover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -437,6 +441,16 @@ body {
 @media (max-width: 772px) {
   .fontSizeCard{
     font-size: 2.5vw;
+  }
+}
+
+.fontSizeCard2{
+  font-size: 1.5vw;
+}
+
+@media (max-width: 772px) {
+  .fontSizeCard2{
+    font-size: 3vw;
   }
 }
 

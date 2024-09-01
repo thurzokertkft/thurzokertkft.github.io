@@ -46,6 +46,8 @@
     opacity: 1; /* Biztosítsd, hogy teljesen látható */
 }
 
+
+
 .marginTopCustom {
     
 }
@@ -53,7 +55,7 @@
 
 @media (min-width: 1024px) {
     .marginTopCustom {
-        margin-top: -10vw; 
+        margin-top: -21.4vw; 
         
     }
 }
