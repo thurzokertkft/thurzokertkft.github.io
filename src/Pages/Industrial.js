@@ -54,7 +54,7 @@ function Industrial() {
             
         <Container fluid>
         <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '3vw'}}>
-        <Col  xs={11} md={11} lg={2}>
+        <Col  xs={11} md={12} lg={2}>
           <Card className='cardSzintAtmenet2 ' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                   <Carousel fade >
                     <Carousel.Item>
@@ -104,7 +104,7 @@ function Industrial() {
               </Card.Text>
           </Card>
         </Col>
-        <Col  xs={11} md={11} lg={3}>
+        <Col  xs={11} md={12} lg={3}>
           <Card className='cardSzintAtmenet3' style={{border: 'none',boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade >
                     <Carousel.Item>
@@ -159,7 +159,7 @@ function Industrial() {
               </Card.Text>
           </Card>
         </Col>
-        <Col  xs={11} md={11} lg={2}>
+        <Col  xs={11} md={12} lg={2}>
           <Card className='cardSzintAtmenet2' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade controls={false} indicators={false}>       
                     <Carousel.Item >
@@ -185,7 +185,7 @@ function Industrial() {
                   
               </Card>
             </Col>
-            <Col  xs={11} md={11} lg={2}>
+            <Col  xs={11} md={12} lg={2}>
           <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade >
          
@@ -225,7 +225,7 @@ function Industrial() {
                   </Card.Text>
               </Card>
             </Col>
-            <Col  xs={11} md={11} lg={3}>
+            <Col  xs={11} md={12} lg={3}>
           <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel>
                         <Carousel.Item>
