@@ -66,8 +66,8 @@ function Main() {
       </Container>
 
       <Container>
-        <Row style={{ marginTop: '10vw'}}>
-          <Col xs={3} md={3} lg={3}>
+        <Row style={{ marginTop: '10vw', textAlign: 'center', justifyContent: 'center'}}>
+          <Col xs={2} md={2} lg={2}>
             <Link to="/Services#specific-section">
               <Card className='szinReklamAtmenet card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
                 <img className='img-fluid reklam' src='OntozoReklam.jpg' style={{ flex: 1, objectFit: 'cover' }} />
@@ -76,7 +76,7 @@ function Main() {
             </Link>
           </Col>
 
-          <Col xs={3} md={3} lg={3}>
+          <Col xs={2} md={2} lg={2}>
           <Link to="/Services#specific-section">
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid reklam3' src='FuReklam.png' style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
@@ -85,7 +85,7 @@ function Main() {
             </Link>
           </Col>
 
-          <Col xs={3} md={3} lg={3}>
+          <Col xs={2} md={2} lg={2}>
             <Link to="/Services#specific-section">
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='KertReklam.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -93,10 +93,17 @@ function Main() {
             </Link>
           </Col>
 
-          <Col xs={3} md={3} lg={3}>
+          <Col xs={2} md={2} lg={2}>
             <Link to="/Services#specific-section">
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='Napelempark.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </Card>
+            </Link>
+          </Col>
+          <Col xs={2} md={2} lg={2}>
+            <Link to="/Services#specific-section">
+              <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
+                <img className='img-fluid' src='Legelo3.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>
             </Link>
           </Col>
@@ -106,9 +113,9 @@ function Main() {
       
 
       <Container>
-        <Row style={{ marginTop: '3vw'}}>
-        <Col xs={3} md={3} lg={3} className='text-center fontSizeCard'>
-          <p style={{
+        <Row style={{ marginTop: '3vw',textAlign: 'center', justifyContent: 'center'}}>
+        <Col xs={2} md={2} lg={2} className='text-center '>
+          <p className='fontSizeCard' style={{
              
             fontWeight: 'normal', 
             color: 'bisque', 
@@ -121,8 +128,8 @@ function Main() {
           </p>
         </Col>
 
-          <Col xs={3} md={3} lg={3} className='text-center fontSizeCard'>
-            <p style={{
+          <Col xs={2} md={2} lg={2} className='text-center '>
+            <p className='fontSizeCard' style={{
             
             fontWeight: 'normal', 
             color: 'bisque', 
@@ -133,8 +140,8 @@ function Main() {
           }}>Gyepszőnyeg</p>
           </Col>
 
-          <Col xs={3} md={3} lg={3} className='text-center fontSizeCard'>
-            <p style={{
+          <Col xs={2} md={2} lg={2} className='text-center'>
+            <p  className='fontSizeCard' style={{
             
             fontWeight: 'normal', 
             color: 'bisque', 
@@ -145,8 +152,8 @@ function Main() {
           }}>Díszkert</p>
           </Col>
           
-          <Col xs={3} md={3} lg={3} className='text-center fontSizeCard'>
-              <p style={{
+          <Col  xs={2} md={2} lg={2} className='text-center '>
+              <p className='fontSizeCard' style={{
               
               fontWeight: 'normal', 
               color: 'bisque', 
@@ -155,6 +162,19 @@ function Main() {
               fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
               fontStyle: 'italic'
             }}>Ipari szolgáltatásaink</p>
+            
+          </Col>
+
+          <Col xs={2} md={2} lg={2} className='text-center'>
+              <p className='fontSizeCard' style={{
+              
+              fontWeight: 'normal', 
+              color: 'bisque', 
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 1)', 
+              letterSpacing: '0.2vw', 
+              fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
+              fontStyle: 'italic'
+            }}>Biodiverzitás</p>
             
           </Col>
         </Row>
