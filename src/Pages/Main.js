@@ -320,7 +320,7 @@ function Main() {
                 <Col xs={12} md={4} style={{paddingRight: 0}}>
                     <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
                         <Card.Body>
-                            <div style={{ marginBottom: '1rem' }}>
+                            <div style={{ marginBottom: '1rem', marginTop: '-15px' }}>
                                 <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
                                     <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
                                 </Nav.Link>
@@ -329,7 +329,7 @@ function Main() {
                                 </Nav.Link>
                             </div>
                             <div  style={{ marginRight: '5vw'}}>
-                            <Card.Title className='fontSize'>
+                            <Card.Title style={{marginBottom: 0}} className='fontSize'>
                                 Elérhetőség:
                             </Card.Title>
                             <Card.Text className='fontSize'>
@@ -337,7 +337,7 @@ function Main() {
                                 <br />
                               +36/70 635 7555
                             </Card.Text>
-                            <Card.Title className='fontSize'>
+                            <Card.Title style={{marginBottom: 0}} className='fontSize'>
                                 Email:
                             </Card.Title>
                             <Card.Text className='fontSize'>
@@ -350,7 +350,7 @@ function Main() {
                 <Col xs={12} md={4} style={{paddingLeft: 0}}>
                 <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
                       <Card.Body>
-                          <div style={{ marginRight: '5vw' }}>
+                          <div style={{ marginRight: '5vw',marginTop: '-1px' }}>
                               <Card.Title className='fontSize'>
                                   <b style={{textDecoration: 'underline'}}>Impresszum</b>
                               </Card.Title>
