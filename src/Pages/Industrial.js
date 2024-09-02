@@ -228,7 +228,7 @@ function Industrial() {
           </Row>
           <Row  style={{textAlign: 'center', justifyContent: 'center'}}>
           <Col className='marginTopCustom' xs={11} md={11} lg={8} >
-            <Col  xs={12} md={12} lg={12}>
+            
               <Card className='cardSzintAtmenet2' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                 <Row>
                 <Col xs={12} md={12} lg={3}>
@@ -326,7 +326,7 @@ function Industrial() {
                 </Row>
               </Card>
 
-            </Col>
+            
 
           </Col>
           </Row>
