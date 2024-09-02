@@ -54,8 +54,8 @@ function Industrial() {
             
         <Container fluid>
         <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '3vw'}}>
-        <Col  xs={11} md={3} lg={3}>
-          <Card className='cardSzintAtmenet2 ' style={{border: 'none'}}>
+        <Col  xs={11} md={11} lg={3}>
+          <Card className='cardSzintAtmenet2 ' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                   <Carousel fade >
                     <Carousel.Item>
                     <img src='Ipari.jpg' className='card-img' alt='Ipari'/>
@@ -104,8 +104,8 @@ function Industrial() {
               </Card.Text>
           </Card>
         </Col>
-        <Col  xs={11} md={3} lg={3}>
-          <Card className='cardSzintAtmenet3' style={{border: 'none'}}>
+        <Col  xs={11} md={11} lg={3}>
+          <Card className='cardSzintAtmenet3' style={{border: 'none',boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade >
                     <Carousel.Item>
                     <img src='Ipari8.jpg' className='card-img' alt='Ipari'/>
@@ -159,8 +159,8 @@ function Industrial() {
               </Card.Text>
           </Card>
         </Col>
-        <Col  xs={11} md={3} lg={3}>
-          <Card className='cardSzintAtmenet2' style={{border: 'none'}}>
+        <Col  xs={11} md={11} lg={3}>
+          <Card className='cardSzintAtmenet2' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade controls={false} indicators={false}>       
                     <Carousel.Item >
                     <img src='Kasza3.jpg' className='card-img '/>                   
@@ -185,8 +185,8 @@ function Industrial() {
                   
               </Card>
             </Col>
-            <Col  xs={11} md={3} lg={3}>
-          <Card className='cardSzintAtmenet3' style={{border: 'none'}}>
+            <Col  xs={11} md={11} lg={3}>
+          <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade >
          
                     <Carousel.Item>
@@ -227,8 +227,8 @@ function Industrial() {
             </Col>
           </Row>
           <Row className='marginTopCustom' style={{textAlign: 'center', justifyContent: 'center'}}>
-          <Col xs={11} md={6}>
-              <Card className='cardSzintAtmenet2'>
+          <Col xs={11} md={11}>
+              <Card className='cardSzintAtmenet2' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                 <Row>
                   <Col xs={12} md={4} style={{ display: 'flex', alignItems: 'center', 
                     height: '100%' }}>
