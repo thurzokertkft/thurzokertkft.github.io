@@ -54,7 +54,7 @@ function Industrial() {
             
         <Container fluid>
         <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '3vw'}}>
-        <Col  xs={11} md={11} lg={3}>
+        <Col  xs={11} md={11} lg={2}>
           <Card className='cardSzintAtmenet2 ' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                   <Carousel fade >
                     <Carousel.Item>
@@ -159,7 +159,7 @@ function Industrial() {
               </Card.Text>
           </Card>
         </Col>
-        <Col  xs={11} md={11} lg={3}>
+        <Col  xs={11} md={11} lg={2}>
           <Card className='cardSzintAtmenet2' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade controls={false} indicators={false}>       
                     <Carousel.Item >
@@ -185,7 +185,7 @@ function Industrial() {
                   
               </Card>
             </Col>
-            <Col  xs={11} md={11} lg={3}>
+            <Col  xs={11} md={11} lg={2}>
           <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel fade >
          
@@ -225,14 +225,9 @@ function Industrial() {
                   </Card.Text>
               </Card>
             </Col>
-          </Row>
-          <Row  style={{textAlign: 'center', justifyContent: 'center'}}>
-          <Col className='marginTopCustom' xs={11} md={11} lg={8} >
-            
-              <Card className='cardSzintAtmenet2' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
-                <Row>
-                <Col xs={12} md={12} lg={3}>
-                <Carousel>
+            <Col  xs={11} md={11} lg={3}>
+          <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+          <Carousel>
                         <Carousel.Item>
                      
                           <img 
@@ -294,9 +289,6 @@ function Industrial() {
                           />
                         </Carousel.Item>
                       </Carousel>
-                </Col>
-                <Col xs={11} md={11} lg={8}>
-                <Card.Body>
                       <Card.Title style={{ paddingLeft: '1vw', textAlign: 'left' }}>
                         Biodiverzitás
                       </Card.Title>
@@ -321,17 +313,18 @@ function Industrial() {
                           </li>
                         </ul>
                       </Card.Text>
-                    </Card.Body>
-                </Col>
-                </Row>
               </Card>
-
-            
-
-          </Col>
+            </Col>
           </Row>
+
+          <Row>
           
+
+          </Row>
+
           
+
+         
          
 
           <Row  className='textCenter' style={{marginTop: '5vw'}}>
