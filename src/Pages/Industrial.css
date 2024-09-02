@@ -53,10 +53,10 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1150px) {
     .marginTopCustom {
         margin-top: -21.4vw; 
-        
+        margin-left: -20vw;
     }
 }
 

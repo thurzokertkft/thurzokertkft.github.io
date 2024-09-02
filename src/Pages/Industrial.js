@@ -226,18 +226,18 @@ function Industrial() {
               </Card>
             </Col>
           </Row>
-          <Row className='marginTopCustom' style={{textAlign: 'center', justifyContent: 'center'}}>
-          <Col xs={11} md={11}>
+          <Row  style={{textAlign: 'center', justifyContent: 'center'}}>
+          <Col className='marginTopCustom' xs={11} md={11} lg={8} >
+            <Col  xs={12} md={12} lg={12}>
               <Card className='cardSzintAtmenet2' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
                 <Row>
-                  <Col xs={12} md={4} style={{ display: 'flex', alignItems: 'center', 
-                    height: '100%' }}>
-                      <Carousel>
+                <Col xs={12} md={12} lg={3}>
+                <Carousel>
                         <Carousel.Item>
                      
                           <img 
                             src='Legelo.jpg' 
-                            className='card-img' 
+                            className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
@@ -249,7 +249,7 @@ function Industrial() {
                      
                           <img 
                             src='Legelo2.jpg' 
-                            className='card-img' 
+                            className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
@@ -261,7 +261,7 @@ function Industrial() {
                      
                           <img 
                             src='Hotel.jpg' 
-                            className='card-img' 
+                            className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
@@ -273,7 +273,7 @@ function Industrial() {
                      
                           <img 
                             src='Madarodu.jpg' 
-                            className='card-img' 
+                            className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
@@ -285,7 +285,7 @@ function Industrial() {
                      
                           <img 
                             src='Madarodu3.jpg' 
-                            className='card-img' 
+                            className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
@@ -294,9 +294,9 @@ function Industrial() {
                           />
                         </Carousel.Item>
                       </Carousel>
-                  </Col>
-                  <Col xs={12} md={8} lg={8}>
-                    <Card.Body>
+                </Col>
+                <Col xs={11} md={11} lg={8}>
+                <Card.Body>
                       <Card.Title style={{ paddingLeft: '1vw', textAlign: 'left' }}>
                         Biodiverzitás
                       </Card.Title>
@@ -311,20 +311,28 @@ function Industrial() {
                           <li>
                             <b>Saját Készítésű Méhhotelek:</b> Támogatjuk a beporzó rovarok, különösen a méhek fennmaradását saját készítésű méhhoteleinkkel, amelyek biztonságos pihenő- és szaporodóhelyeket biztosítanak számukra.
                           </li>
+                          <br />
                           <li>
                             <b>Virágos Méhlegelők Kialakítása:</b> Virágos rétek és méhlegelők telepítésével segítjük a beporzók, például a méhek és lepkék táplálkozását, hozzájárulva a természetes növényvilág sokféleségéhez.
                           </li>
+                          <br />
                           <li>
                             <b>Madárvédelmi Programok:</b> A madarak védelme érdekében madárodúkat és itatókat helyezünk ki, amelyek biztonságos fészkelőhelyet és friss vízforrást biztosítanak számukra, ezzel támogatva a madárpopulációk fennmaradását.
                           </li>
                         </ul>
                       </Card.Text>
                     </Card.Body>
-                  </Col>
+                </Col>
                 </Row>
               </Card>
+
             </Col>
+
+          </Col>
           </Row>
+          
+          
+         
 
           <Row  className='textCenter' style={{marginTop: '5vw'}}>
             <Col xs={12} md={5} lg={12}>
