@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.a9fe5666.css",
-    "main.js": "/static/js/main.e656a22b.js",
+    "main.js": "/static/js/main.2b90f47d.js",
     "static/media/Szolg.png": "/static/media/Szolg.4459ed95d77f6967758b.png",
     "index.html": "/index.html",
     "main.a9fe5666.css.map": "/static/css/main.a9fe5666.css.map",
-    "main.e656a22b.js.map": "/static/js/main.e656a22b.js.map"
+    "main.2b90f47d.js.map": "/static/js/main.2b90f47d.js.map"
   },
   "entrypoints": [
     "static/css/main.a9fe5666.css",
-    "static/js/main.e656a22b.js"
+    "static/js/main.2b90f47d.js"
   ]
 }
