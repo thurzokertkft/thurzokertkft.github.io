@@ -572,6 +572,11 @@ function Services() {
               <img className='img-fluid' src='Napelempark.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Card>
           </Col>
+          <Col xs={3} md={4} lg={2}>
+            <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
+              <img className='img-fluid' src='Legelo3.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </Card>
+          </Col>
         </Row>
       </Container>
 
@@ -614,7 +619,19 @@ function Services() {
             letterSpacing: '0.2vw', 
             fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
             fontStyle: 'italic'
-          }}>Ipari parkok és napelemparkok</p>
+          }}>Ipari szolgáltatásaink</p>
+          </Col>
+
+          <Col xs={3} md={4} lg={2} className='text-center fontSizeCard'>
+            <p style={{
+            
+            fontWeight: 'normal', 
+            color: 'bisque', 
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 1)', 
+            letterSpacing: '0.2vw', 
+            fontFamily: '"Times New Roman", "Garamond", "Georgia", serif',
+            fontStyle: 'italic'
+          }}>Biodiverzitás</p>
           </Col>
 
           
