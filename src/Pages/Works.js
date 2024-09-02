@@ -68,6 +68,83 @@ function Works() {
         
       </Col>
     </Row>
+
+    <Container fluid style={{marginTop: '5vw'}}>
+            <Row style={{textAlign: 'center', justifyContent: 'center'}}>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep2.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep2.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep3.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)' }}>
+                    <img className='img-fluid' src='Kep3.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep4.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep4.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep6.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep6.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep7.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep7.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={4} md={4} lg={4}>
+                    <Card onClick={() => handleClick('Kep8.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep8.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={5} md={5} lg={4}>
+                    <Card onClick={() => handleClick('Kep11.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep11.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={5} md={5} lg={4}>
+                    <Card onClick={() => handleClick('Kep10.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep10.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep13.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep13.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={5} md={5} lg={5}>
+                    <Card onClick={() => handleClick('Kep14.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep14.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep15.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep15.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep16.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep16.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={3} md={3} lg={2}>
+                    <Card onClick={() => handleClick('Kep17.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep17.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                <Col xs={5} md={5} lg={4}>
+                    <Card onClick={() => handleClick('Kep18.jpg')} className='cardokSzinAtmenet' style={{zIndex: '1', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
+                    <img className='img-fluid' src='Kep18.jpg' style={{ flex: 1, objectFit: 'cover' }} />
+                    </Card>
+                </Col>
+                
+            </Row>
+        </Container>
+
         <Container>
             <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '10vw'}}>
                 <Col xs={3} md={2} lg={3}>

@@ -47,7 +47,7 @@ function Industrial() {
         <Card style={{marginTop: '5vw', border: 'none'}}>
             <Card.Body className='cardSzintAtmenet'>
                 <Card.Text className='industrialFontSize' style={{textAlign: 'center', color: 'bisque'}}>
-                    Cégünk ipari zöldterületek karbantartására és kiépítésére is specializálódott, kiemelten fókuszálva ipari parkok, cégek és napelemparkok professzionális gondozására és teljes zöld terület kiépítésére.
+                    Cégünk ipari zöldterületek karbantartására és kiépítésére is specializálódott, kiemelten fókuszálva ipari parkok, cégek és napelemparkok professzionális gondozására és teljes zöldterület kiépítésére.
                 </Card.Text>
             </Card.Body>
         </Card>
@@ -170,7 +170,7 @@ function Industrial() {
                   <Card.Title style={{textAlign: 'left', paddingLeft: '1vw'}}>Kaszálás</Card.Title>
                   <hr style={{color: 'green', border: '2px solid'}}/>
                   <Card.Title style={{textAlign: 'left', paddingLeft: '1vw'}}>
-                  Elkerülheti a büntetéseket és a költséges problémákat – Vágjon bele most a parlagfű eltávolításába!
+                  Elkerülheti a büntetéseket és a költséges problémákat. Vágjon bele most a parlagfű eltávolításába!
                   </Card.Title>
                   <hr style={{color: 'green', border: '2px solid'}}/>
                   <Card.Text style={{textAlign: 'left', paddingLeft: '1vw'}}>
@@ -331,7 +331,7 @@ function Industrial() {
             <Col xs={12} md={5} lg={12}>
             <Card style={{backgroundColor: 'inherit', border: 'none'}}>
               <Card.Title style={{padding: '0.5vw', textAlign: 'center', color: 'bisque'}}>
-              "Növelje vállalata hatékonyságát és csökkentse a költségeket – válasszon minket, optimalizálja ipari zöld területeit a legmagasabb szintű szakértelemmel!
+              "Növelje vállalata hatékonyságát és csökkentse a költségeket – válasszon minket, optimalizálja ipari zöldterületeit a legmagasabb szintű szakértelemmel!
               </Card.Title>
               <hr style={{color: 'green', border: '2px solid'}}/>
               <Card.Title style={{padding: '0.5vw', textAlign: 'center', color: 'bisque'}}>
