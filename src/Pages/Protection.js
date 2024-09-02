@@ -445,72 +445,68 @@ function Protection() {
 
 
         <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>
-            <Row>
-                <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
-                </Col>
-                <Col xs={12} md={4} style={{paddingRight: 0}}>
-                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
-                        <Card.Body>
-                            <div style={{ marginBottom: '1rem' }}>
-                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                                    <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
-                                </Nav.Link>
-                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
-                                </Nav.Link>
-                            </div>
-                            <div  style={{ marginRight: '5vw'}}>
-                            <Card.Title className='fontSize'>
-                                Elérhetőség:
-                            </Card.Title>
-                            <Card.Text className='fontSize'>
-                              +36/70 530 3055
-                                <br />
-                              +36/70 635 7555
-                            </Card.Text>
-                            <Card.Title className='fontSize'>
-                                Email:
-                            </Card.Title>
-                            <Card.Text className='fontSize'>
-                                thurzokertkft@gmail.com
-                            </Card.Text>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col xs={12} md={4} style={{paddingLeft: 0}}>
-                <Card style={{ backgroundColor: 'GrayText', border: '3px solid green' }}>
-                      <Card.Body>
-                          <div style={{ marginRight: '5vw' }}>
-                              <Card.Title className='fontSize'>
-                                  <b style={{textDecoration: 'underline'}}>Impresszum</b>
-                              </Card.Title>
-                              <Card.Text className='fontSize' style={{paddingBottom: '0.75vw'}}>
-                                  Cégnév: Thurzo Kert Kft.
-                                  <br />
-                                  Székhely: 3531 Miskolc Füzes utca 36.
-                                  <br />
-                                  Cégjegyzékszám: 05 09 018959
-                                  <br />
-                                  Adószám: 11722591-2-05
-                                  <br />
-                                  Ügyvezető igazgató: Thurzó Róbert
-                                  <br />
-                                  Telefonszám: +36/70 530 3055
-                                  <br />
-                                  E-mail cím: thurzokertkft@gmail.com
-                                  
-                                  
-                              </Card.Text>
-                              
-                          </div>
-                      </Card.Body>
-                  </Card>
-                    
-                </Col>
-            </Row>
-        </footer>
+    <Row style={{ display: 'flex', alignItems: 'stretch' }}>
+        <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
+        </Col>
+        <Col xs={12} md={4} style={{ paddingRight: 0, display: 'flex' }}>
+            <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
+                <Card.Body>
+                    <div style={{ marginBottom: '1rem' }}>
+                        <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                            <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
+                        </Nav.Link>
+                        <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                            <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
+                        </Nav.Link>
+                    </div>
+                    <div style={{ marginRight: '5vw' }}>
+                        <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
+                            Elérhetőség:
+                        </Card.Title>
+                        <Card.Text className='fontSize'>
+                            +36/70 530 3055
+                            <br />
+                            +36/70 635 7555
+                        </Card.Text>
+                        <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
+                            Email:
+                        </Card.Title>
+                        <Card.Text className='fontSize'>
+                            thurzokertkft@gmail.com
+                        </Card.Text>
+                    </div>
+                </Card.Body>
+            </Card>
+        </Col>
+        <Col xs={12} md={4} style={{ paddingLeft: 0, display: 'flex' }}>
+            <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
+                <Card.Body>
+                    <div style={{ marginRight: '5vw' }}>
+                        <Card.Title className='fontSize'>
+                            <b style={{ textDecoration: 'underline' }}>Impresszum</b>
+                        </Card.Title>
+                        <Card.Text className='fontSize' style={{ paddingBottom: '0.75vw' }}>
+                            Cégnév: Thurzo Kert Kft.
+                            <br />
+                            Székhely: 3531 Miskolc Füzes utca 36.
+                            <br />
+                            Cégjegyzékszám: 05 09 018959
+                            <br />
+                            Adószám: 11722591-2-05
+                            <br />
+                            Ügyvezető igazgató: Thurzó Róbert
+                            <br />
+                            Telefonszám: +36/70 530 3055
+                            <br />
+                            E-mail cím: thurzokertkft@gmail.com                                    
+                        </Card.Text>                          
+                    </div>
+                </Card.Body>
+            </Card>
+        </Col>
+    </Row>
+</footer>
 
 
 
