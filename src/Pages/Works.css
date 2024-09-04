@@ -21,3 +21,7 @@
   transform: scale(1.2); /* 1.2-szeresére nagyítja a képet */
   transition: transform 0.3s ease; /* Áttűnés az eredeti méretből a nagyítottba */
 }
+
+.valami{
+  font-size: 0;
+}
