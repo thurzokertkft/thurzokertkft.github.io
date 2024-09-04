@@ -228,8 +228,7 @@ function Industrial() {
             <Col  xs={11} md={12} lg={3}>
           <Card className='cardSzintAtmenet3' style={{border: 'none', boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)'}}>
           <Carousel>
-                        <Carousel.Item>
-                     
+                        <Carousel.Item>              
                           <img 
                             src='Legelo.jpg' 
                             className='card-img img-fluid' 
@@ -240,8 +239,7 @@ function Industrial() {
                             }} 
                           />
                         </Carousel.Item>
-                        <Carousel.Item>
-                     
+                        <Carousel.Item>                   
                           <img 
                             src='Legelo2.jpg' 
                             className='card-img img-fluid' 
@@ -251,11 +249,10 @@ function Industrial() {
                               objectFit: 'cover' 
                             }} 
                           />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                     
+                        </Carousel.Item>        
+                        <Carousel.Item>             
                           <img 
-                            src='Hotel.jpg' 
+                            src='Bio1.JFIF' 
                             className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
@@ -264,8 +261,41 @@ function Industrial() {
                             }} 
                           />
                         </Carousel.Item>
-                        <Carousel.Item>
-                     
+                        <Carousel.Item>             
+                          <img 
+                            src='Bio3.JFIF' 
+                            className='card-img img-fluid' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>             
+                          <img 
+                            src='Bio4.JFIF' 
+                            className='card-img img-fluid' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>             
+                          <img 
+                            src='Bio5.JFIF' 
+                            className='card-img img-fluid' 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover' 
+                            }} 
+                          />
+                        </Carousel.Item>
+                        
+                        <Carousel.Item>                     
                           <img 
                             src='Madarodu.jpg' 
                             className='card-img img-fluid' 
@@ -277,7 +307,6 @@ function Industrial() {
                           />
                         </Carousel.Item>
                         <Carousel.Item>
-                     
                           <img 
                             src='Madarodu3.jpg' 
                             className='card-img img-fluid' 
