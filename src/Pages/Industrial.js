@@ -252,7 +252,7 @@ function Industrial() {
                         </Carousel.Item>        
                         <Carousel.Item>             
                           <img 
-                            src='Bio1.JFIF' 
+                            src='Bio1.jpg' 
                             className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
@@ -263,7 +263,7 @@ function Industrial() {
                         </Carousel.Item>
                         <Carousel.Item>             
                           <img 
-                            src='Bio3.JFIF' 
+                            src='Bio3.jpg' 
                             className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
@@ -274,7 +274,7 @@ function Industrial() {
                         </Carousel.Item>
                         <Carousel.Item>             
                           <img 
-                            src='Bio4.JFIF' 
+                            src='Bio4.jpg' 
                             className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
@@ -285,7 +285,7 @@ function Industrial() {
                         </Carousel.Item>
                         <Carousel.Item>             
                           <img 
-                            src='Bio5.JFIF' 
+                            src='Bio5.jpg' 
                             className='card-img img-fluid' 
                             style={{ 
                               width: '100%', 
