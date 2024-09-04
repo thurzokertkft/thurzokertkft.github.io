@@ -60,14 +60,15 @@ function Works() {
           </Container>
         </Navbar>
 
-    <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
-      <Col xs={10} md={6} lg={8}>
-        
-          <p className='welcomeFontSize' style={{color: 'bisque'}}>"Számtalan munkánk, megannyi kép formájában tükrözi elkötelezettségünket a minőség és precizitás iránt. Minden projektünk a szakértelmünket és szenvedélyünket hordozza, hogy Ön mindig a legjobbat kapja."
-          </p>
-        
-      </Col>
-    </Row>
+        <Card style={{marginTop: '5vw', border: 'none'}}>
+            <Card.Body className='cardSzintAtmenet'>
+                <Card.Text className='industrialFontSize' style={{textAlign: 'center', color: 'bisque'}}>
+                "Számtalan munkánk, megannyi kép formájában tükrözi elkötelezettségünket a minőség és precizitás iránt. Minden projektünk a szakértelmünket és szenvedélyünket hordozza, hogy Ön mindig a legjobbat kapja."                
+                </Card.Text>
+            </Card.Body>
+        </Card>
+
+    
 
 
     <Container fluid style={{marginTop: '5vw'}}>
