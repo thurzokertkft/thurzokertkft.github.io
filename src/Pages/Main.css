@@ -461,4 +461,49 @@ body {
   margin-top: 15vw;
 }
 
+.slide-pane_from_bottom {
+  height: 100vh !important;
+  margin-top: 0vh !important;
+  transform: translateY(100%);
+}
 
+.slide-pane__close{
+  text-align: right !important;
+  margin-left: 96% !important
+}
+
+@media (max-width: 772px) {
+  .slide-pane__close{
+    text-align: right !important;
+    margin-left: 80% !important
+  }
+}
+
+.slide-pane__title-wrapper{
+  text-align: left !important;
+}
+
+.colorIcon{
+  color: bisque;
+  
+}
+
+.modalImg{
+  background-image: url(../../public/Autumn.jpg);
+}
+
+.modalFontSize{
+
+}
+
+@media (max-width: 772px) {
+  .modalFontSize{
+    font-size: 10px;
+  }
+}
+
+.modal-content {
+  background: linear-gradient(to top, #d2d2d2, #6b6963, #c2c2c2) !important; /* Narancs és világos sárga színátmenet */
+  color: white !important; /* Fehér szöveg a jobb láthatóság érdekében */
+  border-radius: 10px !important; /* Kerekített sarkok */
+}

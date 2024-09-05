@@ -1,20 +1,132 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import './Main.css';
-import { Navbar, Container, Nav, NavbarToggle, NavbarCollapse, Carousel, Col, Card, CardImg, CardHeader, Row, CardBody, CardText, CarouselItem, CardTitle } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavbarToggle, NavbarCollapse, Button, Carousel, Col, Card, CardImg, CardHeader, Row, CardBody, CardText, CarouselItem, CardTitle } from 'react-bootstrap';
 import Footer from 'rc-footer';
 import { Link } from 'react-router-dom';
 import { GiHighGrass, GiSpade, GiPlantRoots  } from "react-icons/gi";
 import { BsDropletFill } from "react-icons/bs";
 import { LiaIndustrySolid } from "react-icons/lia";
 import { FaScrewdriverWrench } from "react-icons/fa6";
-
+import { FaTimes } from 'react-icons/fa'; 
+import { render } from "react-dom";
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
+import Modal from 'react-bootstrap/Modal';
 
 
 function Main() {
+  const [showModal, setShowModal] = useState();
+
+  useEffect(() => {
+    // Ellenőrizzük, hogy az oldal frissült-e
+    const modalShow = localStorage.getItem('showModal');
+    // Ha nincs 'isPaneOpen' bejegyzés a localStorage-ban, vagy az érték nem 'false', nyissuk meg a pane-t
+    if (modalShow === null || modalShow !== 'false') {
+      setShowModal(true);
+      localStorage.setItem('showModal', 'false'); // Állítsuk be 'false'-ra, hogy ne nyíljon meg újra
+    }
+
+  }, []); // Az üres dependency array miatt ez csak egyszer fut le, amikor a komponens mountol
+
+  useEffect(() => {
+    // Töröljük a localStorage bejegyzést az oldal frissítésekor
+    const handleBeforeUnload = () => {
+      localStorage.removeItem('showModal');
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []); // Az üres dependency array miatt ez csak egyszer fut le, amikor a komponens mountol
+
+  const handleRequestClose = () => {
+    setShowModal(false);
+  };
+
+
+  
   
   return (
     <div>
-      
+      <div >
+      <Modal style={{textAlign: 'center', justifyContent: 'center'}} className='modalImg' size='lg' show={showModal} onHide={handleRequestClose} centered>
+      <Modal.Dialog >
+        <Modal.Header style={{textAlign: 'center', justifyContent: 'center', backgroundColor: 'darkOrange'}}>
+          <Modal.Title>Készítsd fel a kerted az őszi szezonra velünk!</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body style={{ position: 'relative' }}>
+        <Col xs={12} md={12} lg={12}>
+          <Card style={{ position: 'relative', overflow: 'hidden' }}>
+            <img
+              src='Autumn5.jpg'
+              alt='Autumn'
+              style={{ width: '100%', height: 'auto' }} // Biztosítja, hogy a kép kitöltse a Card szélességét
+            />
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              color: 'white',
+              textAlign: 'center',
+              zIndex: '2',
+              padding: '10px',
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              width: '90%', // Gondoskodik arról, hogy a szöveg ne csússzon ki
+              boxSizing: 'border-box' // A padding és a border a szélességen belül legyen
+            }}>
+              <p className='modalFontSize'>
+                Az őszi hónapok beköszöntével a természet is átöltözik, és kertünk gondoskodásra vágyik, hogy tavasszal újra élettel teli lehessen. Szolgáltatásainkkal segítünk, hogy kerted a legjobb formáját hozza.
+              </p>         
+            </div>
+          </Card>
+        </Col>
+        <Col xs={12} md={12} lg={12}>
+          <Card style={{ position: 'relative', overflow: 'hidden' }}>
+            <img
+              src='Autumn6.jpg'
+              alt='Autumn'
+              style={{ width: '100%', height: 'auto' }} // Biztosítja, hogy a kép kitöltse a Card szélességét
+            />
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              color: 'white',
+              textAlign: 'center',
+              zIndex: '2',
+              padding: '10px',
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              width: '90%', // Gondoskodik arról, hogy a szöveg ne csússzon ki
+              boxSizing: 'border-box' // A padding és a border a szélességen belül legyen
+            }}>
+              <ul className='modalFontSize'>
+                <li>Gyepszellőztetés és felültrágyázás</li>
+                <li>Növények visszavágása és felkészítése a télre</li>
+                <li>Évelő növények felkészítése</li>
+                <li>Gyümölcsfák és bokrok metszése</li>
+                <li>Levélgyűjtés és komposztálás</li>
+              </ul>         
+            </div>
+          </Card>
+        </Col>
+      </Modal.Body>
+
+        <Modal.Footer style={{backgroundColor: 'darkorange'}}>
+        
+        <Button variant="dark" onClick={handleRequestClose}>
+              Bezár
+            </Button>
+            
+        </Modal.Footer>
+      </Modal.Dialog>   
+      </Modal>
+      </div>      
+           
         <Navbar bg="dark" expand='lg'>
         <Container fluid>
           <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>
@@ -313,68 +425,68 @@ function Main() {
 
 
           <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>
-    <Row style={{ display: 'flex', alignItems: 'stretch' }}>
-        <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
-        </Col>
-        <Col xs={12} md={4} style={{ paddingRight: 0, display: 'flex' }}>
-            <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
-                <Card.Body>
-                    <div style={{ marginBottom: '1rem' }}>
-                        <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                            <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
-                        </Nav.Link>
-                        <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                            <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
-                        </Nav.Link>
-                    </div>
-                    <div style={{ marginRight: '5vw' }}>
-                        <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
-                            Elérhetőség:
-                        </Card.Title>
-                        <Card.Text className='fontSize'>
-                            +36/70 530 3055
-                            <br />
-                            +36/70 635 7555
-                        </Card.Text>
-                        <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
-                            Email:
-                        </Card.Title>
-                        <Card.Text className='fontSize'>
-                            thurzokertkft@gmail.com
-                        </Card.Text>
-                    </div>
-                </Card.Body>
-            </Card>
-        </Col>
-        <Col xs={12} md={4} style={{ paddingLeft: 0, display: 'flex' }}>
-            <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
-                <Card.Body>
-                    <div style={{ marginRight: '5vw' }}>
-                        <Card.Title className='fontSize'>
-                            <b style={{ textDecoration: 'underline' }}>Impresszum</b>
-                        </Card.Title>
-                        <Card.Text className='fontSize' style={{ paddingBottom: '0.75vw' }}>
-                            Cégnév: Thurzo Kert Kft.
-                            <br />
-                            Székhely: 3531 Miskolc Füzes utca 36.
-                            <br />
-                            Cégjegyzékszám: 05 09 018959
-                            <br />
-                            Adószám: 11722591-2-05
-                            <br />
-                            Ügyvezető igazgató: Thurzó Róbert
-                            <br />
-                            Telefonszám: +36/70 530 3055
-                            <br />
-                            E-mail cím: thurzokertkft@gmail.com                                    
-                        </Card.Text>                          
-                    </div>
-                </Card.Body>
-            </Card>
-        </Col>
-    </Row>
-</footer>
+            <Row style={{ display: 'flex', alignItems: 'stretch' }}>
+                <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
+                </Col>
+                <Col xs={12} md={4} style={{ paddingRight: 0, display: 'flex' }}>
+                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
+                        <Card.Body>
+                            <div style={{ marginBottom: '1rem' }}>
+                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                                    <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
+                                </Nav.Link>
+                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
+                                </Nav.Link>
+                            </div>
+                            <div style={{ marginRight: '5vw' }}>
+                                <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
+                                    Elérhetőség:
+                                </Card.Title>
+                                <Card.Text className='fontSize'>
+                                    +36/70 530 3055
+                                    <br />
+                                    +36/70 635 7555
+                                </Card.Text>
+                                <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
+                                    Email:
+                                </Card.Title>
+                                <Card.Text className='fontSize'>
+                                    thurzokertkft@gmail.com
+                                </Card.Text>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs={12} md={4} style={{ paddingLeft: 0, display: 'flex' }}>
+                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
+                        <Card.Body>
+                            <div style={{ marginRight: '5vw' }}>
+                                <Card.Title className='fontSize'>
+                                    <b style={{ textDecoration: 'underline' }}>Impresszum</b>
+                                </Card.Title>
+                                <Card.Text className='fontSize' style={{ paddingBottom: '0.75vw' }}>
+                                    Cégnév: Thurzo Kert Kft.
+                                    <br />
+                                    Székhely: 3531 Miskolc Füzes utca 36.
+                                    <br />
+                                    Cégjegyzékszám: 05 09 018959
+                                    <br />
+                                    Adószám: 11722591-2-05
+                                    <br />
+                                    Ügyvezető igazgató: Thurzó Róbert
+                                    <br />
+                                    Telefonszám: +36/70 530 3055
+                                    <br />
+                                    E-mail cím: thurzokertkft@gmail.com                                    
+                                </Card.Text>                          
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </footer>
 
   </div>
   
