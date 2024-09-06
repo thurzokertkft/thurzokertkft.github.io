@@ -358,7 +358,7 @@ function Main() {
               <Card.Body className="d-flex flex-column flex-md-row align-items-center" style={{ padding: '20px' }}>
                 <GiSpade style={{borderRadius: '10%', width: '100px', height: '100px', color: 'burlywood', backgroundColor: 'grey', boxShadow: '4px 4px 8px rgba(0,0,0,1)'}} />       
                   <Card.Text style={{ fontSize: '20px', margin: '20px', flex: 1, textAlign: 'center' }}>
-                    "Mi gondoskodunk róla, hogy a föld előkészítése a legjobb eredményt hozza, és Önnek csak a kert élvezetére kell koncentrálnia"
+                    "Mi gondoskodunk róla, hogy a föld előkészítése a legjobb eredményt hozza, és önnek csak a kert élvezetére kell koncentrálnia"
                   </Card.Text>
                 </Card.Body>            
               </Card>
@@ -381,7 +381,7 @@ function Main() {
               <Card.Body className="d-flex flex-column flex-md-row align-items-center" style={{ padding: '20px' }}>
                 <GiHighGrass style={{borderRadius: '10%', width: '100px', height: '100px', color: 'lightgreen', backgroundColor: 'grey', boxShadow: '4px 4px 8px rgba(0,0,0,1)', padding: 0}} />      
                   <Card.Text style={{ fontSize: '20px', margin: '20px', flex: 1, textAlign: 'center' }}> 
-                  "Álmai gyepét könnyedén megvalósíthatja velünk! Professzionális füvesítési szolgáltatásaink garantálják a dús, egészséges fűt, amely gyorsan zöldellni fog. Bízza ránk a munkát, és élvezze a zöldellő, gyönyörű kertet egész évben"                  
+                  "Álmai gyepét könnyedén megvalósíthatja velünk! Professzionális füvesítési szolgáltatásaink garantálják a dús, egészséges gyepet, amely gyorsan zöldellni fog. Bízza ránk a munkát, és élvezze a zöldellő, gyönyörű kertet egész évben"                  
                   </Card.Text>  
                 </Card.Body>            
               </Card>
