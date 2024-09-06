@@ -15,118 +15,14 @@ import Modal from 'react-bootstrap/Modal';
 
 
 function Main() {
-  const [showModal, setShowModal] = useState();
-
-  useEffect(() => {
-    // Ellenőrizzük, hogy az oldal frissült-e
-    const modalShow = localStorage.getItem('showModal');
-    // Ha nincs 'isPaneOpen' bejegyzés a localStorage-ban, vagy az érték nem 'false', nyissuk meg a pane-t
-    if (modalShow === null || modalShow !== 'false') {
-      setShowModal(true);
-      localStorage.setItem('showModal', 'false'); // Állítsuk be 'false'-ra, hogy ne nyíljon meg újra
-    }
-
-  }, []); // Az üres dependency array miatt ez csak egyszer fut le, amikor a komponens mountol
-
-  useEffect(() => {
-    // Töröljük a localStorage bejegyzést az oldal frissítésekor
-    const handleBeforeUnload = () => {
-      localStorage.removeItem('showModal');
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []); // Az üres dependency array miatt ez csak egyszer fut le, amikor a komponens mountol
-
-  const handleRequestClose = () => {
-  localStorage.setItem('showModal', 'false');
-  setShowModal(false);
-};
-
+  
 
   
   
   return (
     <div>
-      <div >
-      <Modal className='modalImg' size='lg' show={showModal} onHide={handleRequestClose} centered>
-      <Modal.Dialog >
-        <Modal.Header style={{textAlign: 'center', justifyContent: 'center', backgroundColor: 'darkOrange'}}>
-          <Modal.Title>Készítsd fel a kerted az őszi szezonra velünk!</Modal.Title>
-        </Modal.Header>
-
-        <Modal.Body style={{ position: 'relative' }}>
-        <Col xs={12} md={12} lg={12}>
-          <Card style={{ position: 'relative', overflow: 'hidden' }}>
-            <img
-              src='Autumn5.jpg'
-              alt='Autumn'
-              style={{ width: '100%', height: 'auto' }} // Biztosítja, hogy a kép kitöltse a Card szélességét
-            />
-            <div style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              color: 'white',
-              textAlign: 'center',
-              zIndex: '2',
-              padding: '10px',
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-              width: '90%', // Gondoskodik arról, hogy a szöveg ne csússzon ki
-              boxSizing: 'border-box' // A padding és a border a szélességen belül legyen
-            }}>
-              <p className='modalFontSize'>
-                Az őszi hónapok beköszöntével a természet is átöltözik, és kertünk gondoskodásra vágyik, hogy tavasszal újra élettel teli lehessen. Szolgáltatásainkkal segítünk, hogy kerted a legjobb formáját hozza.
-              </p>         
-            </div>
-          </Card>
-        </Col>
-        <Col xs={12} md={12} lg={12}>
-          <Card style={{ position: 'relative', overflow: 'hidden' }}>
-            <img
-              src='Autumn6.jpg'
-              alt='Autumn'
-              style={{ width: '100%', height: 'auto' }} // Biztosítja, hogy a kép kitöltse a Card szélességét
-            />
-            <div style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              color: 'white',
-              textAlign: 'center',
-              zIndex: '2',
-              padding: '10px',
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-              width: '90%', // Gondoskodik arról, hogy a szöveg ne csússzon ki
-              boxSizing: 'border-box' // A padding és a border a szélességen belül legyen
-            }}>
-              <ul className='modalFontSize'>
-                <li>Gyepszellőztetés és felültrágyázás</li>
-                <li>Növények visszavágása és felkészítése a télre</li>
-                <li>Évelő növények felkészítése</li>
-                <li>Gyümölcsfák és bokrok metszése</li>
-                <li>Levélgyűjtés és komposztálás</li>
-              </ul>         
-            </div>
-          </Card>
-        </Col>
-      </Modal.Body>
-
-        <Modal.Footer style={{backgroundColor: 'darkorange'}}>
-        
-        <Button variant="dark" onClick={handleRequestClose}>
-              Bezár
-            </Button>
-            
-        </Modal.Footer>
-      </Modal.Dialog>   
-      </Modal>
-      </div>      
+      
+      
            
         <Navbar bg="dark" expand='lg'>
         <Container fluid>
