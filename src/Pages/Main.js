@@ -42,8 +42,9 @@ function Main() {
   }, []); // Az üres dependency array miatt ez csak egyszer fut le, amikor a komponens mountol
 
   const handleRequestClose = () => {
-    setShowModal(false);
-  };
+  localStorage.setItem('showModal', 'false');
+  setShowModal(false);
+};
 
 
   
