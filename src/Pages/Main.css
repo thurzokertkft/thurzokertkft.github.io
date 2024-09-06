@@ -461,27 +461,6 @@ body {
   margin-top: 15vw;
 }
 
-.slide-pane_from_bottom {
-  height: 100vh !important;
-  margin-top: 0vh !important;
-  transform: translateY(100%);
-}
-
-.slide-pane__close{
-  text-align: right !important;
-  margin-left: 96% !important
-}
-
-@media (max-width: 772px) {
-  .slide-pane__close{
-    text-align: right !important;
-    margin-left: 80% !important
-  }
-}
-
-.slide-pane__title-wrapper{
-  text-align: left !important;
-}
 
 .colorIcon{
   color: bisque;

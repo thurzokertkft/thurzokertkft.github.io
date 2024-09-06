@@ -51,7 +51,7 @@ function Main() {
   return (
     <div>
       <div >
-      <Modal style={{textAlign: 'center', justifyContent: 'center'}} className='modalImg' size='lg' show={showModal} onHide={handleRequestClose} centered>
+      <Modal className='modalImg' size='lg' show={showModal} onHide={handleRequestClose} centered>
       <Modal.Dialog >
         <Modal.Header style={{textAlign: 'center', justifyContent: 'center', backgroundColor: 'darkOrange'}}>
           <Modal.Title>Készítsd fel a kerted az őszi szezonra velünk!</Modal.Title>
