@@ -47,20 +47,24 @@ function Us() {
         <Row style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
           <Col xs={12} md={8} lg={8} >
             <Card className='blurred2' style={{textAlign: 'center'}}>
+              <Card.Title style={{color: 'bisque'}}>Kedves Látogató!</Card.Title>
               <Card.Text style={{color: 'bisque'}} className='TextSize'>
-              Üdvözlünk az oldalon! Örülünk, hogy itt vagy, és reméljük, hogy megtalálod, amit keresel. Ha bármiben segítségre van szükséged, ne habozz kapcsolatba lépni velünk. Kellemes böngészést kívánunk!
+              Cégünk 2005 augusztusában kezdte meg pályafutását egyéni vállalkozóként, majd 2010-től Kft.-ként folytatta működését. Folyamatos tanulás és fejlődés révén szereztünk magas színvonalú tapasztalatot, amelyet ügyfeleink elégedettsége tükröz.
               </Card.Text>
-              <img className='img-fluid kepekAtmenete' src='Ipari.jpg'/>
+              <img className='img-fluid kepekAtmenete' src='Rolunk.jpg'/>
             </Card>
           </Col>
           <Col xs={12} md={4} lg={4} >
           <Card className='blurred2' style={{textAlign: 'center'}}>
               <Card.Text style={{color: 'bisque'}} className='TextSize'>
-              Üdvözlünk az oldalon! Örülünk, hogy itt vagy, és reméljük, hogy megtalálod, amit keresel. Ha bármiben segítségre van szükséged, ne habozz kapcsolatba lépni velünk. Kellemes böngészést kívánunk!
+              Öntözőrendszereinket kezdettől fogva egyféle márkával építjük. A legjobb minőségű <b>HUNTER</b> anyagokkal dolgozunk, legyen szó akár kiskertről, akár focipálya méretű területről. Szakembereink folyamatos továbbképzéseken vesznek részt, hogy a legújabb technológiákat is alkalmazni tudják. Az öntözőrendszerek nagy fejlődésen mentek keresztül: víztakarékos szórófejekkel és telefonról vezérelhető, okos elektronikai rendszerekkel bővült a kínálat.
+              </Card.Text>
+              <Card.Text style={{color: 'bisque', textAlign: 'left'}} className='TextSize'><b>
+              Profilunkba tartozik a gyepszőnyeg telepítése, füvesítés, kertépítés, kertgondozás, valamint ipari zöldterületek karbantartása.</b>
               </Card.Text>
           </Card>
           <Card style={{marginTop: '2vw'}} className='blurred2'>
-            <img src='Ipari5.jpg'/>
+            <img src='Rolunk3.jpg'/>
           </Card>
           </Col>
         </Row>
@@ -68,31 +72,45 @@ function Us() {
             <Col xs={6} md={4} lg={4} style={{paddingRight: 0}}>
               <Card className='blurred2' style={{textAlign: 'center'}}>
                 <Card.Text style={{color: 'bisque'}} className='TextSize'>
-                  Üdvözlünk az oldalon! Örülünk, hogy itt vagy, és reméljük, hogy megtalálod, amit keresel. Ha bármiben segítségre van szükséged, ne habozz kapcsolatba lépni velünk. Kellemes böngészést kívánunk!
+                Profi minőségű gyepszőnyeggel dolgozunk, amellyel azonnal zöld felületet tudunk létrehozni. Nagy tisztaságú fűmagkeveréket vetünk, így bár a vetett fű nem azonnal, de hamar szép, tiszta, egybefüggő gyep lesz.
                 </Card.Text>
-                <img className='kepekAtmenete2' src='Ipari2.jpg'/>
+                <Card.Text style={{color: 'bisque'}} className='TextSize'>
+                Fontos tudni, különösen a jelenlegi forró nyarakra tekintettel, hogy a gyep öntözőrendszer nélkül nem működik megfelelően. Öntözőrendszer használatával vizet, időt és pénzt spórolhatunk meg.
+                </Card.Text>
+                <Card.Text style={{color: 'bisque'}} className='TextSize'>
+                A szép gyep három alapfeltétele: a megfelelő mennyiségű víz a megfelelő időben, speciális tápanyagutánpótlás, valamint a rendszeres fűnyírás.
+                </Card.Text>
+                <img className='kepekAtmenete2' src='Rolunk5.jpg'/>
               </Card>
             </Col>     
             <Col xs={6} md={8} lg={8} style={{paddingLeft: 0}}>
               <Card className='blurred2'>
-                <img className='img-fluid' src='Ipari4.jpg'/>
+                <img className='img-fluid' src='Rolunk4.jpg'/>
+              </Card>
+              <br />
+              <Card className='blurred2' style={{textAlign: 'center'}}>
+                <Card.Text style={{color: 'bisque'}} className='TextSize'>
+                Egy komplex kert kialakításánál fontos, hogy a dísznövények harmonizáljanak a füves területtel, a meglévő környezettel és a megrendelő igényeivel.
+
+                Kertépítéseink során kiemelt figyelmet fordítunk a biodiverzitásra, hiszen ez egy fontos szempont a jövő nemzedékeire való tekintettel.
+                </Card.Text>
+              </Card>
+              <br />
+              <Card className='blurred2'>
+                <img className='img-fluid' src='Rolunk6.jpg'/>
               </Card>
             </Col>
         </Row>
-
-        <Row style={{marginTop: '10vw', textAlign: 'center', justifyContent: 'center'}}>
-          <Col xs={12} md={10} lg={10}>
-            <Card style={{textAlign: 'center', backgroundColor: 'inherit', border:'none'}}>
-              <Card.Title style={{color: 'bisque'}} className='TextSize'>
-                Köszönjük, hogy időt szántál arra, hogy elolvasd a rólunk szóló anyagot. Nagyra értékeljük az érdeklődésedet, és reméljük, hogy sikerült betekintést nyújtanunk tevékenységünkbe. Ha bármilyen kérdésed van, vagy többet szeretnél megtudni, szívesen állunk rendelkezésedre!
-              </Card.Title>
-            </Card>
-          </Col>
-        </Row>
-
       </Container>
 
 
+      <Card style={{marginTop: '10vw', border: 'none'}}>
+            <Card.Body className='cardSzintAtmenet'>
+                <Card.Text className='industrialFontSize' style={{textAlign: 'center', color: 'bisque'}}>
+                Köszönjük, hogy időt szántál arra, hogy elolvasd a rólunk szóló anyagot. Nagyra értékeljük az érdeklődésedet, és reméljük, hogy sikerült betekintést nyújtanunk tevékenységünkbe. Ha bármilyen kérdésed van, vagy többet szeretnél megtudni, szívesen állunk rendelkezésedre!               
+                </Card.Text>
+            </Card.Body>
+        </Card>
     
       <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>
     <Row style={{ display: 'flex', alignItems: 'stretch' }}>
