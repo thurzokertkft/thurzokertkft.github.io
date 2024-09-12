@@ -153,65 +153,212 @@ function Protection() {
                     </ol>
                     </Card.Text>
                     <Card xs={6} md={12} lg={12} style={{ padding: '2rem' }}>
-                        <Card.Title style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
-                            Adatkezelési tevékenység
-                        </Card.Title>
-                        <Table striped bordered hover>
-                            <thead>
+                    <Card.Title style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
+                        Adatkezelési tevékenység
+                    </Card.Title>
+                    <Table striped bordered hover>
+                        <thead>
                             <tr>
                                 <th>Adatkezelési tevékenység</th>
                                 <th>Adatkezelői minőségben végzett adatkezelési tevékenységek</th>
                             </tr>
-                            </thead>
-                            <tbody>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td>Kapcsolatfelvétel telefonon</td>
+                                <td>Kapcsolatfelvétel telefonon és e-mailen keresztül</td>
                                 <td>
-                                <Table striped bordered>
-                                    <tbody>
-                                    <tr>
-                                        <td><strong>Adatkezelés célja:</strong></td>
-                                        <td>Kapcsolat felvétele telefon formájában</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Adatkezelés jogalapja:</strong></td>
-                                        <td>GDPR 6. cikk (1) bekezdés b) pont: a szerződés teljesítése vagy a szerződés megkötését megelőzően az Érintett kérésére történő lépések megtételéhez szükséges</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Az Érintettek kategóriái:</strong></td>
-                                        <td>Érdeklődő</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Személyes adatok köre:</strong></td>
-                                        <td>Név, telefonszám, Város cím</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Adatmegőrzési idő:</strong></td>
-                                        <td>A kapcsolatfelvételt követő 1. év végéig</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Adattovábbítás:</strong></td>
-                                        <td>A GDPR 44-49. cikkei szerinti adattovábbítás nem történik</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Címzettek:</strong></td>
-                                        <td>Az Adatkezelő Adatfeldolgozó(ka)t nem vesz igénybe</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Adatok forrása:</strong></td>
-                                        <td>A személyes adatok forrása az érdeklődő</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Adatszolgáltatás módja, következménye:</strong></td>
-                                        <td>Az adatok megadása szükséges. Amennyiben Ön nem adja meg a személyes adatokat, akkor az Adatkezelő nem tud kapcsolatot felvenni Önnel</td>
-                                    </tr>
-                                    </tbody>
-                                </Table>
+                                    <Table striped bordered>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Adatkezelés célja:</strong></td>
+                                                <td>Kapcsolatfelvétel telefonon és e-mailben, valamint az oldalon keresztüli üzenetváltás során történő kommunikáció</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Adatkezelés jogalapja:</strong></td>
+                                                <td>GDPR 6. cikk (1) bekezdés a) pont: a szerződés teljesítése vagy a szerződés megkötését megelőzően az Érintett kérésére történő lépések megtételéhez szükséges</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Az Érintettek kategóriái:</strong></td>
+                                                <td>Érdeklődő, aki telefonon, e-mailben vagy az oldalon keresztül lép kapcsolatba velünk</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Személyes adatok köre:</strong></td>
+                                                <td>Név, e-mail cím, telefonszám, város/cím, esetleg üzenet szövege</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Adatmegőrzési idő:</strong></td>
+                                                <td>A kapcsolatfelvételt követő 1 év végéig</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Adattovábbítás:</strong></td>
+                                                <td>A GDPR 44-49. cikkei szerinti nemzetközi adattovábbítás nem történik</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Címzettek:</strong></td>
+                                                <td>Az Adatkezelő adatfeldolgozó(ka)t nem vesz igénybe</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Adatok forrása:</strong></td>
+                                                <td>A személyes adatok forrása az Érintett, aki telefonon, e-mailben vagy az oldalon keresztül nyújtja be azokat</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Adatszolgáltatás módja, következménye:</strong></td>
+                                                <td>Az adatok megadása szükséges a kapcsolatfelvételhez. Amennyiben Ön nem adja meg a szükséges személyes adatokat, az Adatkezelő nem tud kapcsolatba lépni Önnel</td>
+                                            </tr>
+                                        </tbody>
+                                    </Table>
                                 </td>
                             </tr>
-                            </tbody>
-                        </Table>
-                        </Card>
+                        </tbody>
+                    </Table>
+                </Card>
+                <Card xs={6} md={12} lg={12} style={{ padding: '2rem' }}>
+                <Card xs={6} md={12} lg={12} style={{ padding: '2rem' }}>
+                <Card.Title style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
+                    Adatfeldolgozók
+                </Card.Title>
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th>Adatfeldolgozó</th>
+                            <th>Milyen személyes adatokhoz fér hozzá? Milyen módon használhatja fel az adatokat?</th>
+                            <th>Mennyi ideig tárolhatja az adatokat?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Github Pages</td>
+                            <td>Tárhelyszolgáltató; az oldalhoz kapcsolódó adatokat tárolja, de az adatokat nem kezeljük közvetlenül a Github Pages által.</td>
+                            <td>Amíg élő szerződésünk van velük.</td>
+                        </tr>
+                        <tr>
+                            <td>Google Inc.</td>
+                            <td>Levelezőrendszer szolgáltatója; az e-mailek tartalmát a Google szerverein tárolja. Az adatfeldolgozó nem olvassa az elektronikus levelek tartalmát, csak az infrastruktúra szolgáltatást biztosítja.</td>
+                            <td>Amíg élő szerződésünk van velük.</td>
+                        </tr>
+                        <tr>
+                            <td>Számlázz.hu</td>
+                            <td>Számlázó alkalmazás üzemeltetője; a számlák készítéséhez és tárolásához szükséges infrastruktúrát biztosítja.</td>
+                            <td>Amíg élő szerződésünk van velük.</td>
+                        </tr>
+                    </tbody>
+                </Table>
+            </Card>
+
+    <Table striped bordered hover>
+        <thead>
+            <tr>
+                <th>Adatkezelési tevékenység</th>
+                <th>Adatkezelői minőségben végzett adatkezelési tevékenységek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Szerződéskötés és Megrendelés</td>
+                <td>
+                    <Table striped bordered>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adatkezelés célja:</strong></td>
+                                <td>Szerződés előkészítése, megkötése, valamint a megrendelések kezelése és teljesítése</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatkezelés jogalapja:</strong></td>
+                                <td>GDPR 6. cikk (1) bekezdés b) pont: szerződés teljesítése</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Az Érintettek kategóriái:</strong></td>
+                                <td>Szerződő felek, megrendelők</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Személyes adatok köre:</strong></td>
+                                <td>Név, e-mail cím, telefonszám, cím, számlázási adatok, megrendelés részletei</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatmegőrzési idő:</strong></td>
+                                <td>A szerződéses kötelezettségek teljesítését követő 8 év</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adattovábbítás:</strong></td>
+                                <td>A GDPR 44-49. cikkei szerinti nemzetközi adattovábbítás nem történik</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Címzettek:</strong></td>
+                                <td>Az Adatkezelő adatfeldolgozó(ka)t nem vesz igénybe</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatok forrása:</strong></td>
+                                <td>A személyes adatok forrása az Érintett, aki a szerződéskötés vagy megrendelés során nyújtja be azokat</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatszolgáltatás módja, következménye:</strong></td>
+                                <td>Az adatok megadása szükséges a szerződéskötéshez és megrendeléshez. Amennyiben Ön nem adja meg a szükséges személyes adatokat, a szerződés megkötése és a megrendelés teljesítése nem lehetséges</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </td>
+            </tr>
+        </tbody>
+    </Table>
+</Card>
+<Card xs={6} md={12} lg={12} style={{ padding: '2rem' }}>
+    
+    <Table striped bordered hover>
+        <thead>
+            <tr>
+                <th>Adatkezelési tevékenység</th>
+                <th>Adatkezelői minőségben végzett adatkezelési tevékenységek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Számlázás</td>
+                <td>
+                    <Table striped bordered>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adatkezelés célja:</strong></td>
+                                <td>Számlák kiállítása és könyvelése</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatkezelés jogalapja:</strong></td>
+                                <td>GDPR 6. cikk (1) bekezdés c) pont: jogi kötelezettség teljesítése</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Az Érintettek kategóriái:</strong></td>
+                                <td>Ügyfelek, akikkel számlázási tranzakciók történnek</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Személyes adatok köre:</strong></td>
+                                <td>Név, cím, adóazonosító jel</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatmegőrzési idő:</strong></td>
+                                <td>A számviteli és adózási jogszabályoknak megfelelően 8 év</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adattovábbítás:</strong></td>
+                                <td>A GDPR 44-49. cikkei szerinti nemzetközi adattovábbítás nem történik</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Címzettek:</strong></td>
+                                <td>A NAV, mint jogszabályi kötelezettség teljesítése</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatok forrása:</strong></td>
+                                <td>A személyes adatok forrása az Érintett, aki a számlázási tranzakció során nyújtja be azokat</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adatszolgáltatás módja, következménye:</strong></td>
+                                <td>Az adatok megadása szükséges a számlázáshoz. Amennyiben Ön nem adja meg a szükséges személyes adatokat, a számlázás nem lehetséges</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </td>
+            </tr>
+        </tbody>
+    </Table>
+</Card>
                         <Card style={{ padding: '2rem' }}>
                         <Table striped bordered hover>
                             <thead>

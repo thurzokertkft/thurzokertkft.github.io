@@ -476,7 +476,7 @@ function Main() {
                                     <br />
                                     Adószám: 11722591-2-05
                                     <br />
-                                    Ügyvezető igazgató: Thurzó Róbert
+                                    Ügyvezető: Thurzó Róbert
                                     <br />
                                     Telefonszám: +36/70 530 3055
                                     <br />
