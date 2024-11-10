@@ -8,7 +8,7 @@ import Support from './Pages/Support';
 import Protection from './Pages/Protection';
 import Contract from './Pages/Contract';
 import Industrial from './Pages/Industrial';
-import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 

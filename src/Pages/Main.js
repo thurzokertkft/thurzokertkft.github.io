@@ -46,7 +46,12 @@ function Main() {
   setShowModal(false);
 };
 
-
+const scrollToSection = () => {
+  const section = document.getElementById('specific-section');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   
   
   return (
@@ -181,7 +186,7 @@ function Main() {
       <Container>
         <Row style={{ marginTop: '10vw', textAlign: 'center', justifyContent: 'center'}}>
           <Col xs={3} md={3} lg={3}>
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
                 <img className='img-fluid reklam' src='OntozoReklam.jpg' style={{ flex: 1, objectFit: 'cover' }} />
                 <img className='img-fluid reklam2' src='ontozoReklam2.jpg' style={{ width: '100%', objectFit: 'cover' }} />
@@ -190,7 +195,7 @@ function Main() {
           </Col>
 
           <Col xs={3} md={3} lg={3}>
-          <Link to="/Services#specific-section">
+          <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid reklam3' src='FuReklam.png' style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
                 <img className='img-fluid reklam4' src='FuReklam2.jpg' style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
@@ -199,7 +204,7 @@ function Main() {
           </Col>
 
           <Col xs={3} md={3} lg={3}>
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='KertReklam.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>
@@ -207,20 +212,14 @@ function Main() {
           </Col>
 
           <Col xs={3} md={3} lg={3}>
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='Napelempark.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               
               </Card>
             </Link>
           </Col>
-         {/* <Col xs={2} md={2} lg={2}>
-            <Link to="/Services#specific-section">
-              <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
-                <img className='img-fluid' src='Legelo3.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              </Card>
-            </Link>
-          </Col>*/}
+        
         </Row>
       </Container>
 
@@ -286,21 +285,21 @@ function Main() {
       <Container>
         <Row style={{ marginTop: '2vw', textAlign: 'center', justifyContent: 'center'}}>
         <Col xs={3} md={3} lg={3} >
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='Legelo3.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>
             </Link>
           </Col>
           <Col xs={3} md={3} lg={3} >
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='Madarodu4.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>
             </Link>
           </Col>
           <Col xs={3} md={3} lg={3} >
-            <Link to="/Services#specific-section">
+            <Link to="/Services" onClick={() => scrollToSection()}>
               <Card className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
                 <img className='img-fluid' src='Legelo5.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </Card>

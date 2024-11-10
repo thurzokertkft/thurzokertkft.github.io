@@ -17,17 +17,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function Services() {
 
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 500); // 500ms késleltetés, de ez szükség szerint állítható
-    }
-  }, []);
+  
 
   const [state, setState] = useState({
     isPaneOpen: false,
