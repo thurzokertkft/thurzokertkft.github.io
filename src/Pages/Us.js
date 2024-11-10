@@ -12,8 +12,19 @@ import { FaScrewdriverWrench } from "react-icons/fa6";
 
 function Us() {
   
+  useEffect(() => {
+    const sectionId = sessionStorage.getItem('scrollTo');
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        sessionStorage.removeItem('scrollTo'); // Töröljük a görgetési információt
+      }
+    }
+  }, []);
+
   return (
-    <div className='bodyBackground'>
+    <div id="specific-section2" className='bodyBackground'>
       <Navbar bg="dark" expand='lg'>
         <Container fluid>
           <img style={{width: '150px'}} className='img-fluid' src='Logo.png'/>

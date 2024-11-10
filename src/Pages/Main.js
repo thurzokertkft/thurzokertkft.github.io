@@ -52,6 +52,13 @@ const scrollToSection = () => {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
+const scrollToSection2 = () => {
+  const section = document.getElementById('specific-section2');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   
   
   return (
@@ -347,7 +354,7 @@ const scrollToSection = () => {
                   <img className="img-fluid" src="Fokep2.png" alt="Kép" />
                     <Card.Title className=' toUs sign littleAnimation'>Had<span className='fast-flicker' style={{marginRight: '1vw'}}>d </span> mutatko <span className='flicker'>zz</span>unk be...</Card.Title>           
                       <Nav.Link style={{left: '50%', transform: 'translateX(-65%)', top: '40%',  marginRight: '2em', color: 'bisque', position: 'absolute'}}>
-                        <Link className='toUs glow-on-hover' to="/Us" style={{ textDecoration: 'none', marginLeft: '25px'}}>"Kattintson ide"</Link>
+                        <Link className='toUs glow-on-hover' to="/Us" style={{ textDecoration: 'none', marginLeft: '25px'}} onClick={() => sessionStorage.setItem('scrollTo', 'specific-section2')}>"Kattintson ide"</Link>
                       </Nav.Link>                           
                 </Card>
               </Col>
