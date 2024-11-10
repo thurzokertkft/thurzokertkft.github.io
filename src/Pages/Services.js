@@ -17,7 +17,16 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function Services() {
 
-  
+  useEffect(() => {
+    const sectionId = sessionStorage.getItem('scrollTo');
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        sessionStorage.removeItem('scrollTo'); // Töröljük a görgetési információt
+      }
+    }
+  }, []);
 
   const [state, setState] = useState({
     isPaneOpen: false,
@@ -46,22 +55,22 @@ function Services() {
             <Navbar.Toggle className="ms-auto"/>
             <Navbar.Collapse className="justify-content-end">
               <Nav>
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque'}}>
+                <Nav.Link className='navLinkHover' style={{ marginRight: '2em', color: 'bisque'}}>
                   <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Főoldal</Link>
                 </Nav.Link>
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                <Nav.Link  style={{ marginRight: '2em', color: 'bisque' }}>
                   <Link to="/Services" style={{ color: 'inherit', textDecoration: 'none', fontSize: '110%' }}>Szolgáltatásaink</Link>
                 </Nav.Link>
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                <Nav.Link className='navLinkHover' style={{ marginRight: '2em', color: 'bisque' }}>
                   <Link to="/Industrial" style={{ color: 'inherit', textDecoration: 'none' }}>Cégeknek</Link>
                 </Nav.Link>  
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                <Nav.Link className='navLinkHover' style={{ marginRight: '2em', color: 'bisque' }}>
                   <Link to="/Us" style={{ color: 'inherit', textDecoration: 'none' }}>Rólunk</Link>
                 </Nav.Link>   
-                <Nav.Link style={{ marginRight: '2em', color: 'bisque' }}>
+                <Nav.Link className='navLinkHover' style={{ marginRight: '2em', color: 'bisque' }}>
                   <Link to="/Works" style={{ color: 'inherit', textDecoration: 'none' }}>Munkáink</Link>
                 </Nav.Link>  
-                <Nav.Link style={{ marginRight: '20em', color: 'bisque'}}>
+                <Nav.Link className='navLinkHover' style={{ marginRight: '20em', color: 'bisque'}}>
                   <Link to="/Support" style={{ color: 'inherit', textDecoration: 'none' }}>Kapcsolat</Link>
                 </Nav.Link>          
               </Nav>
@@ -270,7 +279,7 @@ function Services() {
         </Col>
     </Container>
 
-    <Container id="specific-section" style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
+    <Container style={{textAlign: 'center', justifyContent: 'center', marginTop: '5vw'}}>
       <div className='szolgValasztas'>
         Válasszon szolgáltatásainkból
       </div>
@@ -330,7 +339,7 @@ function Services() {
         </Row>
       </Container>
 
-    <Container fluid  >
+    <Container  fluid  >
         <Row style={{textAlign: 'center', justifyContent: 'center'}}>
           <Col xs={3} md={2} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column'}}>
@@ -360,15 +369,15 @@ function Services() {
         </Row>
       </Container>
 
-      <Container fluid style={{marginTop: '-3vw'}}>
-        <Row style={{textAlign: 'center', justifyContent: 'center'}}>
+      <Container id="specific-section" fluid style={{marginTop: '-3vw'}}>
+        <Row  style={{textAlign: 'center', justifyContent: 'center'}}>
           <Col xs={3} md={3} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
               <img className='img-fluid' src='TervReklam.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Card>
           </Col>
 
-          <Col xs={3} md={3} lg={2}>
+          <Col  xs={3} md={3} lg={2}>
             <Card onClick={() => setState({ isPaneOpen: true })} className='szinReklamAtmenet2 card-hover' style={{boxShadow: '20px 10px 30px rgba(0, 0, 0, 1)', height: '23vw', display: 'flex', flexDirection: 'column' }}>
               <img className='img-fluid' src='Karbantartas.jpg' style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Card>
@@ -633,69 +642,134 @@ function Services() {
       </Container>
       
     
-      <footer fluid className="footer" style={{ color: 'bisque', padding: 0, backgroundColor: '#333333', marginTop: '20vw' }}>
-            <Row style={{ display: 'flex', alignItems: 'stretch' }}>
-                <Col xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <img src='Logo.png' style={{ width: '100%', maxWidth: '200px', marginTop: '1rem' }} alt="Logo"/>
-                </Col>
-                <Col xs={12} md={4} style={{ paddingRight: 0, display: 'flex' }}>
-                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
-                        <Card.Body>
-                            <div style={{ marginBottom: '1rem' }}>
-                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                                    <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>Adatvédelem</b></Link>
-                                </Nav.Link>
-                                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
-                                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline'}}><b>ÁSZF</b></Link>
-                                </Nav.Link>
-                            </div>
-                            <div style={{ marginRight: '5vw' }}>
-                                <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
-                                    Elérhetőség:
-                                </Card.Title>
-                                <Card.Text className='fontSize'>
-                                    +36/70 530 3055
-                                    <br />
-                                    +36/70 635 7555
-                                </Card.Text>
-                                <Card.Title style={{ marginBottom: 0 }} className='fontSize'>
-                                    Email:
-                                </Card.Title>
-                                <Card.Text className='fontSize'>
-                                    thurzokertkft@gmail.com
-                                </Card.Text>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col xs={12} md={4} style={{ paddingLeft: 0, display: 'flex' }}>
-                    <Card style={{ backgroundColor: 'GrayText', border: '3px solid green', flex: 1 }}>
-                        <Card.Body>
-                            <div style={{ marginRight: '5vw' }}>
-                                <Card.Title className='fontSize'>
-                                    <b style={{ textDecoration: 'underline' }}>Impresszum</b>
-                                </Card.Title>
-                                <Card.Text className='fontSize' style={{ paddingBottom: '0.75vw' }}>
-                                    Cégnév: Thurzo Kert Kft.
-                                    <br />
-                                    Székhely: 3531 Miskolc Füzes utca 36.
-                                    <br />
-                                    Cégjegyzékszám: 05 09 018959
-                                    <br />
-                                    Adószám: 11722591-2-05
-                                    <br />
-                                    Ügyvezető: Thurzó Róbert
-                                    <br />
-                                    Telefonszám: +36/70 530 3055
-                                    <br />
-                                    E-mail cím: thurzokertkft@gmail.com                                    
-                                </Card.Text>                          
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-        </footer>
+      <footer fluid className="footer" style={{
+    color: 'bisque', 
+    backgroundColor: '#333333', 
+    padding: '1rem', 
+    marginTop: '20vw', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    justifyContent: 'center', 
+    alignItems: 'center'
+}}>
+    <Row style={{ width: '100%', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', marginBottom: '2rem' }}>
+        
+        {/* Logo Section */}
+        <Col xs={12} md={4} lg={4} style={{
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            marginBottom: '2rem'
+        }}>
+          
+            <img src="Logo.png" alt="Logo" style={{
+                maxWidth: '450px', 
+                width: '100%', 
+                height: 'auto',
+                objectFit: 'contain'
+            }} />
+            
+        </Col>
+
+        {/* Links and Contact Info Section */}
+        <Col xs={12} md={4} lg={4} style={{
+    display: 'flex', 
+    justifyContent: 'center', 
+    alignItems: 'stretch', 
+    padding: 0, // Eltávolítottuk a paddingot, hogy elkerüljük a csúszást
+   
+}}>
+    <Card style={{
+        backgroundColor: 'GrayText', 
+        border: '3px solid green', 
+        width: '100%', 
+        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
+        flex: 1
+    }}>
+        <Card.Body>
+            <div style={{ marginBottom: '1.5rem' }}>
+                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                    <Link to="/Protection" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline', fontWeight: 'bold' }}>
+                        Adatvédelem
+                    </Link>
+                </Nav.Link>
+                <Nav.Link style={{ color: 'bisque', textAlign: 'left' }}>
+                    <Link to="/Contract" className='fontSize' style={{ color: 'inherit', textDecoration: 'underline', fontWeight: 'bold' }}>
+                        ÁSZF
+                    </Link>
+                </Nav.Link>
+            </div>
+            <div>
+                <Card.Title style={{ marginBottom: '0.5rem' }} className='fontSize'>
+                    Elérhetőség:
+                </Card.Title>
+                <Card.Text className='fontSize'>
+                    +36/70 530 3055
+                    <br />
+                    +36/70 635 7555
+                </Card.Text>
+                <Card.Title style={{ marginBottom: '0.5rem' }} className='fontSize'>
+                    Email:
+                </Card.Title>
+                <Card.Text className='fontSize'>
+                    thurzokertkft@gmail.com
+                </Card.Text>
+            </div>
+        </Card.Body>
+    </Card>
+</Col>
+
+{/* Impressum Section */}
+<Col xs={12} md={4} lg={4} style={{
+    display: 'flex', 
+    justifyContent: 'center', 
+    alignItems: 'stretch', 
+    padding: 0, // Eltávolítottuk a paddingot, hogy elkerüljük a csúszást
+}}>
+    <Card style={{
+        backgroundColor: 'GrayText', 
+        border: '3px solid green', 
+        width: '100%', 
+        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
+        
+        flex: 1
+    }}>
+        <Card.Body>
+            <Card.Title className='fontSize' style={{ marginBottom: '1rem', textDecoration: 'underline' }}>
+                <b>Impresszum</b>
+            </Card.Title>
+            <Card.Text className='fontSize'>
+                Cégnév: Thurzó Kert Kft.
+                <br />
+                Székhely: 3531 Miskolc Füzes utca 36.
+                <br />
+                Cégjegyzékszám: 05 09 018959
+                <br />
+                Adószám: 11722591-2-05
+                <br />
+                Ügyvezető: Thurzó Róbert
+                <br />
+                Telefonszám: +36/70 530 3055
+                <br />
+                E-mail cím: thurzokertkft@gmail.com
+            </Card.Text>
+        </Card.Body>
+    </Card>
+</Col>
+    </Row>
+    
+    {/* Footer Bottom Section (Optional) */}
+    <div style={{
+        textAlign: 'center',
+        color: 'bisque', 
+        marginTop: '2rem', 
+        fontSize: '0.9rem', 
+        borderTop: '1px solid #444',
+        paddingTop: '1rem',
+    }}>
+        <p>&copy; 2024 Thurzo Kert Kft. Minden jog fenntartva.</p>
+    </div>
+</footer>
 
 
       

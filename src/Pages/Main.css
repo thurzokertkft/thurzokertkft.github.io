@@ -490,3 +490,15 @@ body {
 .valami{
   
 }
+
+.navLinkHover {
+  text-decoration: none; /* Alapértelmezett, hogy ne legyen aláhúzva */
+  
+}
+
+/* Hover effektus */
+.navLinkHover:hover {
+  text-decoration: underline rgb(186, 164, 22) 2px; /* Aláhúzás hover esetén */
+  text-underline-offset: 10px;
+  
+}
