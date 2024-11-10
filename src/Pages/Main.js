@@ -86,6 +86,8 @@ const scrollToSection = () => {
             }}>
               <p className='modalFontSize'>
                 Az őszi hónapok beköszöntével a természet is átöltözik, és kertünk gondoskodásra vágyik, hogy tavasszal újra élettel teli lehessen. Szolgáltatásainkkal segítünk, hogy kerted a legjobb formáját hozza.
+                <br/>
+                Óvja meg öntözőrendszerét a téli fagytól! Víztelenítéssel megelőzheti a károkat – spóroljon a javításon, gondoljon előre!
               </p>         
             </div>
           </Card>
@@ -111,6 +113,7 @@ const scrollToSection = () => {
               boxSizing: 'border-box' // A padding és a border a szélességen belül legyen
             }}>
               <ul className='modalFontSize'>
+                <li>Öntözőrendszer víztelenítése</li>
                 <li>Gyepszellőztetés és felültrágyázás</li>
                 <li>Növények visszavágása és felkészítése a télre</li>
                 <li>Évelő növények felkészítése</li>
